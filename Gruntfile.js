@@ -1,4 +1,4 @@
-// Generated on 2014-05-20 using generator-angular 0.8.0
+// Generated on 2014-04-29 using generator-angular 0.8.0
 'use strict';
 
 // # Globbing
@@ -14,6 +14,9 @@ module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
+
+  // LESS Pluging
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -43,8 +46,10 @@ module.exports = function (grunt) {
         tasks: ['newer:jshint:test', 'karma']
       },
       styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        files: ['<%= yeoman.app %>/styles/{,*/}*.css',
+                '<%= yeoman.app %>/styles/{,*/}*.less'
+        ],
+        tasks: ['newer:copy:styles', 'autoprefixer', 'less']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -126,6 +131,26 @@ module.exports = function (grunt) {
         }]
       },
       server: '.tmp'
+    },
+
+    less: {
+      development: {
+        options: {
+          paths: ['<%= yeoman.app %>/styles/']
+        },
+        files: {
+          '<%= yeoman.app %>/styles/theme.css': '<%= yeoman.app %>/styles/theme.less'
+        }
+      },
+      production: {
+        options: {
+          paths: ['<%= yeoman.app %>/styles/'],
+          cleancss: true
+        },
+        files: {
+          '<%= yeoman.app %>/styles/theme.css': '<%= yeoman.app %>/styles/theme.less'
+        }
+      }
     },
 
     // Add vendor prefixed styles
