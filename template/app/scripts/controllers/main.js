@@ -17,7 +17,7 @@ angular.module('babelBlogsApp')
 		}
 
 		// Hide Push Right Menu
-		var hideMenu = function() {			
+		var hideMenu = function() {
 			if ($scope.ui.showMenu === true) {
 				$scope.ui.showMenu = false;
 			}
