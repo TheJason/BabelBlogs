@@ -58,7 +58,8 @@ angular.module('babelBlogsApp')
 		// }
 
 		// Trigger when switch between subpages.
-    $rootScope.$on('$routeChangeStart', function(event, next, current) {
+    $rootScope.$on('$routeChangeStart', function(event, next) {
+      $scope.ui.showMenu = false;
       if (next.originalPath === '/' && next.redirectTo === '/') {
         $scope.ui.homePage = true;
       }
