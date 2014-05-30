@@ -38,6 +38,7 @@ angular.module('babelBlogsApp')
   }
 ])
 
+
 /**
  * Main Controller
  */
@@ -68,4 +69,36 @@ angular.module('babelBlogsApp')
       }
     });
   }
+])
+
+
+/**
+ * FAQ Controller
+ */
+.controller('FAQCtrl', ['$scope',
+	function($scope) {
+		$scope.questions = [
+			{
+			  question: 'If this then that?',
+			  answer: 'Yes'
+			},
+			{
+				question: 'If this then that?',
+				answer: 'No'
+			},
+			{
+				question: 'If this then that?',
+				answer: 'Maybe'
+			},
+			{
+				question: 'If this then that?',
+				answer: 'You are right'
+			},
+			{
+				question: 'If this then that?',
+				answer: 'Look at this post...'
+			},
+		];
+
+	}
 ]);

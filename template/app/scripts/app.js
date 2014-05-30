@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/pricing.html',
         //controller: 'MainCtrl'
       })
+      .when('/faq', {
+        templateUrl: 'views/faq.html',
+        controller: 'FAQCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

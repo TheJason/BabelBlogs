@@ -1,0 +1,16 @@
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" ng-repeat="item in accordionItems">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href>
+          {{ item.title }}
+        </a>
+      </h4>
+    </div>
+    <div id="collapse{{$index+1}}" class="panel-collapse collapse" ng-class="{'in': $index===0}">
+      <div class="panel-body">
+        {{ item.description }}
+      </div>
+    </div>
+  </div>
+</div>
