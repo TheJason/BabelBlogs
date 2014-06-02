@@ -73,28 +73,53 @@ angular.module('babelBlogsApp')
 
 
 /**
+ * Blog Controller
+ */
+.controller('BlogCtrl', ['$scope', 'blogPosts',
+	function($scope, blogPosts) {
+		$scope.articles = blogPosts.articles;
+	}
+])
+
+
+/**
+ * Blog Entry Controller
+ */
+.controller('BlogEntryCtrl', ['$scope', '$routeParams', 'blogPosts',
+	function($scope, $routeParams, blogPosts) {
+		$scope.article = blogPosts.articles[$routeParams.id];
+	}
+])
+
+
+/**
  * FAQ Controller
  */
 .controller('FAQCtrl', ['$scope',
 	function($scope) {
 		$scope.questions = [
 			{
+				id: 0,
 			  question: 'If this then that?',
 			  answer: 'Yes'
 			},
 			{
+				id: 1,
 				question: 'If this then that?',
 				answer: 'No'
 			},
 			{
+				id: 2,
 				question: 'If this then that?',
 				answer: 'Maybe'
 			},
 			{
+				id: 3,
 				question: 'If this then that?',
 				answer: 'You are right'
 			},
 			{
+				id: 4,
 				question: 'If this then that?',
 				answer: 'Look at this post...'
 			},

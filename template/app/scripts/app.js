@@ -14,8 +14,12 @@ angular
         controller: 'MainCtrl',
         role: 'homepage'
       })
-      .when('/subpage', {
-        templateUrl: 'views/subpage.html',
+      .when('/sign-in', {
+        templateUrl: 'views/sign-in.html',
+        //controller: 'MainCtrl'
+      })
+      .when('/sign-up', {
+        templateUrl: 'views/sign-up.html',
         //controller: 'MainCtrl'
       })
       .when('/tour', {
@@ -33,6 +37,14 @@ angular
       .when('/pricing', {
         templateUrl: 'views/pricing.html',
         //controller: 'MainCtrl'
+      })
+      .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl'
+      })
+      .when('/blog/:id', {
+        templateUrl: 'views/blog-entry.html',
+        controller: 'BlogEntryCtrl'
       })
       .when('/faq', {
         templateUrl: 'views/faq.html',

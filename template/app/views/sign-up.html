@@ -1,0 +1,24 @@
+<div ng-include="'views/_header.html'"></div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">      
+      <div class="col-md-12 ">
+        <form class="form-signin" role="form">
+          <h2 class="form-signin-heading">Sign up today</h2>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+          <label for="username">User Name</label>
+          <input type="text" name="username" class="form-control" placeholder="User Name" required="" autofocus="">
+
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" placeholder="Password" required="">          
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        </form>
+      </div>      
+    </div>
+  </div><!--/ content -->
+  
+  <div ng-include="'views/_footer.html'"></div>
+</div>

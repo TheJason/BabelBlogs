@@ -57,8 +57,7 @@
 body {
 	// padding-top: 40px;
 	background-image: url("../images/bg07.jpg");
-	overflow-x: hidden;
-	height: 100%;
+	overflow-x: hidden;	
 	.accelerated;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -225,22 +224,39 @@ body.pmr-open {
 	}
 }
 
+// Login
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
 
 /**
  * Responsive
  */
-@media (max-width: 767px) {
+
+@media(min-width: @screen-tablet) {
 	html {
-		height: 100%;
+		height: auto !important;
 	}
 
-	.navbar {
-		margin-bottom: 0px !important;
+	body {
+		height: 100% !important;
+	}
+}
+
+@media (max-width: 767px) {
+	html {
+		height: auto !important;
 	}
 
 	body {
 		padding-top: 0px;
-		height: 100%;
+		height: 100% !important;
+	}
+
+	.navbar {
+		margin-bottom: 0px !important;
 	}
 
   .content {
