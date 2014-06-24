@@ -1,0 +1,969 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"feat",
+				"featured"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"input",
+				"input	input - email"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"to",
+				"toggleClass	jQuery"
+			],
+			[
+				"na",
+				"navbar"
+			],
+			[
+				"data",
+				"data_list"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"cur",
+				"currentItem"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"loca",
+				"location	jsWindow"
+			],
+			[
+				"wi",
+				"with	with"
+			],
+			[
+				"qu",
+				"querySelector	jsDOM"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"abs",
+				"abstract"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"isA",
+				"isAuthenticated"
+			],
+			[
+				"ng-",
+				"ng-switch=  (attribute)"
+			],
+			[
+				"border-",
+				"border-right"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"http",
+				"httpResponse"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"button",
+				"BUTTON"
+			],
+			[
+				"thumb",
+				"thumbnails"
+			],
+			[
+				"fade",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"tras",
+				"transition:   (property)"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"DEFAULT",
+				"DEFAULT_FILE_STORAGE"
+			],
+			[
+				"ob",
+				"obj_id"
+			],
+			[
+				"uer",
+				"user_id"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"ima",
+				"image_url"
+			],
+			[
+				"find",
+				"findall"
+			],
+			[
+				"vsearc",
+				"vsearch"
+			],
+			[
+				"tea",
+				"team_introduction"
+			],
+			[
+				"e",
+				"except"
+			],
+			[
+				"vide",
+				"video"
+			],
+			[
+				"vi",
+				"video_thumbnail"
+			],
+			[
+				"video",
+				"video_list"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"json",
+				"json"
+			],
+			[
+				"photo_",
+				"photo_url"
+			],
+			[
+				"pho",
+				"photo_title"
+			],
+			[
+				"team_p",
+				"team_photo"
+			],
+			[
+				"TEM",
+				"TEMPLATE_CONTEXT_PROCESSORS"
+			],
+			[
+				"S3",
+				"S3_FOLDER_STORAGE"
+			],
+			[
+				"lo",
+				"login_required"
+			],
+			[
+				"Ima",
+				"ImageList  (class)"
+			],
+			[
+				"I",
+				"ImageEdit  (class)"
+			],
+			[
+				"news",
+				"news_json"
+			],
+			[
+				"url",
+				"urlopen  (function)"
+			],
+			[
+				"ve",
+				"vsearch_db"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"",
+				"API-Completion-Package: Settings – Default"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python Django"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python Django"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"javasc",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"cron",
+				"Snippet: h_cron"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"t",
+				"Tidy HTML"
+			],
+			[
+				"comm",
+				"Snippet: comment"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"pep",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"togg",
+				"Toggle Comment"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"com",
+				"Snippet: comment"
+			],
+			[
+				"commet",
+				"Toggle Block Comment"
+			],
+			[
+				"text",
+				"Set Syntax: Textile"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"comment",
+				"Snippet: comment"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_testimonials_slide.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/main.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/controllers/main.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/app.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_push_right_menu.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/features.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_features_header.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_header.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/pricing.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/variables.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/content-policy.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_nav.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/blog.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_accordion.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/node_modules/grunt-svgmin/node_modules/svgo/plugins/_collections.js",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/shopwell.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/sign-up.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/blog-entry.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/templates.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/services/services.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/faq.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/bower_components/jquery/src/var/push.js",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/sw_json_parser.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/directives.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_footer.html",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/settings.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/faq.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/tour.html",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/sw_items.json",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-2/sw_json_parser.py",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-2/amazon_new.py",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-2/settings.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/Gruntfile.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_nav.html",
+		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/main.less",
+		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/variables.less",
+		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/index.html",
+		"/C/Users/David/Downloads/SW Field Mapping - Sheet1.csv",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/model.py",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/pipelines.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/dist/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/dist/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/main.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/scripts/services/services.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/_header.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/scripts/controllers/main.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/tour.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/pricing.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/templates.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/features.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/scripts/app.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Gladiator/www/js/controllers.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/variables.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/_footer.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/include.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/header.html",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/JavaScript and jQuery API Completions/sublime-API-Completions-Package.sublime-settings",
+		"/C/Users/David/Downloads/sw-10-25k.csv",
+		"/C/Users/David/Downloads/sw-10-25k_integers.csv",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/Gruntfile.js",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/tesco.py",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/items.py",
+		"/C/Users/David/Downloads/ng-mobile-menu-master/ng-mobile-menu-master/demo/ng-mobile-menu.min.js",
+		"/C/Users/David/Downloads/ng-mobile-menu-master/ng-mobile-menu-master/demo/skinny.html",
+		"/C/Users/David/Downloads/ng-mobile-menu-master/ng-mobile-menu-master/demo/index.html",
+		"/C/Users/David/Downloads/ng-mobile-menu-master/ng-mobile-menu-master/demo/app.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/theme.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/theme.css",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/middlewares.py",
+		"/C/Users/David/Downloads/sw-check.csv",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/Gruntfile.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/app/styles/main.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/app/styles/variables.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/app/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/app/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/app/styles/theme.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Gladiator/bkp_develop_yeoman/Gruntfile.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/cloud/main.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/js/services.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/js/controllers.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/signup.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/signin.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/modal.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/new-challenge.html",
+		"/C/Users/David/Downloads/youtube-api-samples-4dcb701e91d5/yt-upload-javascript/index.html",
+		"/C/Users/David/Downloads/youtube-api-samples-4dcb701e91d5/yt-upload-javascript/index.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/public/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/public/templates/tab-newsfeed.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/js/yt-upload.js",
+		"/C/Users/David/Downloads/youtube-python-appengine/youtube-appengine-sample/main.py",
+		"/C/Users/David/Downloads/yt-direct-lite-javascript/static/js/ytdl/config.js",
+		"/C/Users/David/Downloads/Angular-2014-03-08/Angular/AngularJS.pdf",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/modal",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/cloud/package.json",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/amazon_new.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/login.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/friend-detail.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-friends.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-challenges.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/js/app.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/cloud/views/head.ejs",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/cloud/views/store_auth.ejs",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/CloudCode/public/js/services.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/nav-stack",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/logout.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tabs.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/scss/ionic.app.scss",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-newsfeed.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/lib/ionic/scss/_variables.scss",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/gulpfile.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/bkp_develop_yeoman/app/scripts/controllers/main.js",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/models.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/admin.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/views.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/iglesia/settings.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/bootstrap_theme/templates/base.html",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/templates/miembros.html",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/urls.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/iglesia/urls.py",
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/forms.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/package.json",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-dash.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-account.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"no-bg",
+			"red",
+			"h3",
+			"span",
+			"footer",
+			"varia",
+			"body",
+			"back",
+			"line-",
+			"h2",
+			"p",
+			"push",
+			"small",
+			".small",
+			"small",
+			"boo",
+			"class",
+			"color",
+			"feature",
+			"p>",
+			"<p",
+			"h4",
+			"td>",
+			"free",
+			"brand",
+			"slide",
+			"featu",
+			"<td><i",
+			"<td",
+			"No",
+			"Yes",
+			"privacy",
+			"other site",
+			"cookies",
+			"con",
+			"testi",
+			"inclu",
+			"ipad",
+			"logo",
+			"logo_",
+			"logo",
+			"logo_",
+			"bg",
+			"<img src=\"../images/template1.jpg\" alt=\"\" height=\"240\" width=\"240\">",
+			"active",
+			"</div>",
+			"<h3>",
+			"</div>",
+			"<h3>",
+			"brand",
+			"nav",
+			"brand",
+			"red",
+			"brand",
+			"footer",
+			"brand",
+			"content",
+			" brand",
+			"content",
+			"logo",
+			"media",
+			"body",
+			"media",
+			"html",
+			"body",
+			"deskto",
+			"@",
+			"overf",
+			"body",
+			"html",
+			"product",
+			"body",
+			"width",
+			"figure",
+			"container",
+			"product",
+			".css",
+			"href",
+			"100%",
+			"console",
+			"log",
+			"body",
+			"footer",
+			"href",
+			"print",
+			"tate",
+			"name",
+			".content",
+			"bg07",
+			"260px",
+			"300",
+			"mark",
+			"menu",
+			" = ",
+			"= ",
+			"re_dou",
+			"scripts/",
+			".js",
+			"controller",
+			"row",
+			"meta",
+			"writer",
+			"None",
+			",,",
+			"',",
+			"u'",
+			"ingredients_",
+			"views/",
+			"views",
+			"usemin",
+			"src",
+			"usemin",
+			"ng-s",
+			"rev",
+			"240",
+			"\"240\"",
+			"src",
+			"img",
+			"conso",
+			"bg0",
+			"320",
+			"bg",
+			"on\"",
+			"list-",
+			"btn",
+			"alert",
+			"show",
+			"sow"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ng-href",
+			"YouTube",
+			"youtube",
+			"vuforia.",
+			"Zone3",
+			"zone3",
+			"Marwi",
+			"marwi",
+			"gallery",
+			"Yakima",
+			"yakima",
+			"NorthWave",
+			"northwave",
+			"casco",
+			"Casco",
+			"Bikers",
+			"{{ STATIC_URL }}assets/\n",
+			"{{MEDIA_URL}}assets/\n",
+			"''\n",
+			"ent\"> \\n",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"header",
+				"app/views/_header.html"
+			],
+			[
+				"feat",
+				"app/views/features.html"
+			],
+			[
+				"v",
+				"app/styles/variables.less"
+			],
+			[
+				"",
+				"app/styles/main.less"
+			],
+			[
+				"pricin",
+				"app/views/pricing.html"
+			],
+			[
+				"tes",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"nav",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"fea",
+				"app/views/features.html"
+			],
+			[
+				"pricing",
+				"app/views/pricing.html"
+			],
+			[
+				"test",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"varia",
+				"app/styles/variables.less"
+			],
+			[
+				"featu",
+				"app/views/features.html"
+			],
+			[
+				"push",
+				"app/scripts/directives/_push_right_menu.html"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"blog",
+				"app/views/blog.html"
+			],
+			[
+				"_",
+				"node_modules/grunt-svgmin/node_modules/svgo/plugins/_collections.js"
+			],
+			[
+				"_ac",
+				"app/scripts/directives/_accordion.html"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"main.l",
+				"app/styles/main.less"
+			],
+			[
+				"main",
+				"app/views/main.html"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"testi",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"_nav",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"templ",
+				"app/views/templates.html"
+			],
+			[
+				"template",
+				"app/views/templates.html"
+			],
+			[
+				"_na",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"_header",
+				"app/views/_header.html"
+			],
+			[
+				"ervi",
+				"app/scripts/services/services.js"
+			],
+			[
+				"faq",
+				"app/views/faq.html"
+			],
+			[
+				"main.j",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"sign",
+				"app/views/sign-up.html"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"upsert",
+				"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/app/scripts/controllers/logout.js"
+			],
+			[
+				"vsearch",
+				"/C/Backup/Trabajos/odesk.com/projects/Kenneth/vSearch/products-WB0B30DGR/ace-v1.2--bs-v3.0.0/form-elements.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

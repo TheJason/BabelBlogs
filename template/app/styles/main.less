@@ -9,20 +9,34 @@
 .navbar-inverse {
 	background: none;
 	border: none;
-	.navbar-toggle {
-		border: none;
-	}
-	ul {
+	.navbar-nav{
 		li {
-			text-shadow: 0px 0px 1px #888;
 			&.active {
 				a {
 					background: none;
+					color: #d5d379 !important;
 				}
+			}
+			&:hover {
+				a {					
+					color: #d5d379 !important;
+				}
+			}
+			a {
+				text-shadow: 1px 1px 7px #eee;
+				// text-shadow: 1px 0px 1px #888;
+				color: #797842;
 			}
 		}
 	}
+	.navbar-toggle {
+		border: none;
+		.icon-bar {
+			background-color: @gray;
+		}
+	}	
 }
+
 
 .navbar-inverse .navbar-nav>.active>a {
 	background: none;
@@ -31,12 +45,30 @@
 	}
 }
 
+.navbar-brand {
+	color: @gray;
+}
+
+.brand-name {
+	color: @gray;
+}
+
+.brand-logo {
+	display: inline-block;
+	margin-right: 10px;
+	height: 64px;
+}
+
 /**
  * Mixins
  */
 .center {
 	display: table;
 	margin: 0px auto;
+	text-align: center;
+}
+
+.txt-center {
 	text-align: center;
 }
 
@@ -56,7 +88,8 @@
 // Body
 body {
 	// padding-top: 40px;
-	background-image: url("../images/bg07.jpg");
+	//background-image: url("../images/bg07.jpg");
+	background-color: #fff;
 	overflow-x: hidden;	
 	.accelerated;
 	-webkit-transition: all 0.3s;
@@ -67,12 +100,25 @@ body {
 	&.no-bg {
 		background-color: #eee !important;
     background-image: none !important;
+    .navbar-inverse {			
+			.navbar-nav{
+				li {					
+					a {						
+						text-shadow: 1px 1px 7px #606060 !important;
+
+					}
+				}
+			}			
+		}
 		.content {
 			color: @gray !important;
 		}
 		footer, .footer {
-			color: @gray !important;	
+			color: @gray !important;
 		}
+	}
+	footer, .footer {
+		color: @gray-dark;
 	}
 }
 
@@ -97,11 +143,39 @@ body {
 		padding-top: 40px;
 		min-height: 320px;
 		//background: #FFF;
-		background: url("../images/bg04.jpg");
+		background: url("../images/bg01.jpg");
+}
+
+.featured {
+	padding: 6.4% 0px;
+	background-image: url('../images/bg03.jpg');
+	min-height: 448px;
+	//display: table;
+	background-size: 100%;
+	background-position-y: -300px;
+	// img {
+	// 	width: 100%;
+	// }
+}
+
+.testimonials {
+	.item{
+		img {
+			width: 30%;
+		}
+	}
+	.carousel-caption {
+		color: #d5d379;
+		font-size: 22px;
+		padding: 0px;
+		margin: 0px 0px 0px 12%;
+		width: 64%;
+	}	
 }
 
 .content {
 	min-height: 400px;
+	color: @gray;
 }
 
 nav.menu {
@@ -117,7 +191,7 @@ nav.menu {
 	transition: all 0.3s;
 	ul {
 		list-style-type: none;
-		line-height: 32px;
+		line-height: 28px;
 		margin: 0;
 		padding: 0;
 		li {
@@ -150,18 +224,28 @@ nav.push-menu-right {
 	top: 0;
 	width: 240px;
 	height: 100%;
-	right: -240px;	
-	li {
-		display: block;
-		text-align: left;
-		padding: 0px 40px;
-		&:first-child {
-			border-top: none
+	right: -240px;
+	padding-top: 50px;
+	ul {
+		li {
+			display: block;
+			text-align: left;
+			padding: 0px 40px;
+			&.close-btn {
+				position: absolute;
+				right: -15px;
+			}
+			&:first-child {
+				border-top: none
+			}
+			&:last-child {
+				border-bottom: none
+			}
+		}	
+		&.secundary li {
+			font-size: @font-size-small;
 		}
-		&:last-child {
-			border-bottom: none
-		}
-	}
+	}	
 	a {
 		display: block;		
 		font-size: 16px;
@@ -189,15 +273,27 @@ body.pmr-open {
 	}
 }
 
-// Market
+// Marketing
 .marketing {
 	text-align: center;
-	text-shadow: 0px 0px 1px #888;
+	text-shadow: 1px 1px 3px #888;
 	margin: 20px auto 40px auto;
 	width: 75%;
   &+img {
     width: 75%;
   }
+}
+
+table.features {
+	th {
+		text-align: center;
+	}
+	.glyphicon-ok {
+		color: @brand-success;
+	}
+	// td {
+	// 	text-align: center;
+	// }
 }
 
 // Pricing
@@ -252,11 +348,25 @@ body.pmr-open {
 
 	body {
 		padding-top: 0px;
-		height: 100% !important;
+		height: 100% !important;		
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	.header {
+		background: #1A1A1A !important;
 	}
 
 	.navbar {
 		margin-bottom: 0px !important;
+	}
+
+	.brand-logo {
+		display: inline-block;
+		margin-right: 10px;
+		height: 18px;
 	}
 
   .content {
@@ -284,14 +394,23 @@ body.pmr-open {
   }
 
 	// Footer
-	footer, .footer {		
+	footer, .footer {
     hr {
       display: none;
     }
 	}
 
-	.brand-logo {
+	.brand-name {
 		display: none;
+	}
+
+	.featured {
+		min-height: 194px;
+		display: block;
+		background-size: inherit;
+		.testimonials {
+			display: none;
+		}
 	}
 
 	.marketing {

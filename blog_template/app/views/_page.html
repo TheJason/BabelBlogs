@@ -1,0 +1,38 @@
+<div class="header" bb-block>
+  <ul class="nav nav-pills pull-right">
+    <li ng-repeat="page in site.pages track by page.id"><a ng-href="#{{page.url}}" title="{{page.description}}">{{page.title}}</a></li>
+  </ul>
+  <h3 class="text-muted">{{ site.name }}</h3>
+</div>
+
+<div class="content" bb-content ng-repeat="page in currentPage">
+  <h1>{{ page.title }}</h1>
+  <div ng-bind-html="trustedHtml(page.content)"></div>
+
+  <!-- Modal -->
+    <div class="modal fade" id="WYSIWYGModal" tabindex="-1" role="dialog" aria-labelledby="WYSIWYGModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="WYSIWYGModalLabel">WYSIWYG Editor</h4>
+          </div>
+          <div class="modal-body">
+          <form action="" accept-charset="utf-8">
+            <textarea name="html" rows="10" cols="89"  ng-model="richTextEditing"></textarea>
+          </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-remove="page">Remove</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-apply="edition">Apply changes</button>
+          </div>
+        </div>
+      </div>
+    </div><!--/ modal -->
+</div>
+
+<div class="footer" bb-block>  
+  <p>{{site.name}} &copy 2014</p>
+</div>

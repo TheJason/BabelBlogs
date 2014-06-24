@@ -73,6 +73,32 @@ angular.module('babelBlogsApp')
 
 
 /**
+ * Testimonials Controller
+ */
+.controller('TestimonialsCtrl', ['$scope',
+	function($scope) {
+		$scope.testimonials = [
+			{
+				id: 0,
+				testimonial: 'I only speak <strong>Indonesian</strong> but my blog can speaks over 40-different languages!',
+				image: 'images/people04.png'
+			},
+			{
+				id: 1,
+				testimonial: 'My <strong>soccer blog</strong> has fallowers from all over the world. Thanks to Babel Blogs',
+				image: 'images/people05.png'
+			},
+			{
+				id: 2,
+				testimonial: 'My business just became <strong>International</strong>, and now, so is my website. Thanks to Babel Blogs',
+				image: 'images/people06.png'
+			}
+		];
+	}
+])
+
+
+/**
  * Blog Controller
  */
 .controller('BlogCtrl', ['$scope', 'blogPosts',

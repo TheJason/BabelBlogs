@@ -1,0 +1,20 @@
+<div class="bb-toolbar" ng-show="bbcore.edit" ng-cloak>
+  <span class="brand-logo"><img src="images/brand_name.png" alt=""></span>
+
+  <span>Current: {{ bbcore.pages[0].title }}</span>
+  <span class="glyphicon glyphicon-phone"></span>
+
+  <span>
+    <select name="preview-language">
+      <option value="en">English(Default)</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </select>
+  </span>
+
+  <span class=options>
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span> Preview</button>
+    <button type="button" class="btn btn-default" data-save="edition"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Publish</button>
+  </span>
+</div>
