@@ -2,9 +2,9 @@
  * Variables
  */ 
 @base-color: #0199fc;
-@text-color: darken(#00FC83, 20%);
+@text-color: darken(@base-color, 10%);
 @body-bg:    lighten(@base-color, 28%);
-
+//00FC83
 
 
 /**
@@ -14,6 +14,10 @@
 	border: 1px dashed darken(azure, 28%);
 }
 
+.center {
+	display: table;
+	margin: 0 auto;
+}
 
 
 /**
@@ -43,6 +47,10 @@ body {
 	background: #FFF;
 }
 
+.content {
+	width: 80% !important;
+	margin: 0 auto;
+}
 
 
 /**
@@ -110,6 +118,14 @@ body {
 						border-left: 2px solid #d5d379;
 						.glyphicon {
 							display: inline-block;
+						}
+					}
+					&[data-page-add] {
+						.glyphicon {
+							font-size: 14px;
+							float: none;
+							display: inline-block;
+							color: inherit;
 						}
 					}
 				}

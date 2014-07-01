@@ -3,7 +3,7 @@
 angular.module('blogTemplateApp')
 
   /**
-   * BabelBlogs Core
+   * BabelBlogs Core Controller
    */
   .controller('BBCoreCtrl', function ($sce, $rootScope, $scope, $route, $location, Site) {
     $scope.bbcore = {};
@@ -11,26 +11,100 @@ angular.module('blogTemplateApp')
     $scope.site = Site;
     $scope.contents = {};
 
-    // Load Pages from Services
+    // Function which add a new page
+    $scope.bbcore.addPage = function(name, path, content) {
+      // Add the page to the service.
+      var newPageId = $scope.site.pages.length+1;
+      var newPage = {
+        id: newPageId,
+        title: name,
+        description: name,
+        type: 'page',
+        content: content,
+        url: path
+      };
+      $scope.site.pages.push(newPage);
+
+      // Add the Route
+      var RePath = new RegExp('^\\/'+path+'$');
+      var originalPath = '/'+path;
+
+      var keyPath = '';
+      if (path === '/') {
+        keyPath = path;
+        RePath = new RegExp('^\\'+path+'$');
+        originalPath = path;
+      }
+      else {
+        keyPath = '/'+path;
+      }
+
+      $route.routes[keyPath] = {
+        keys: [],
+        originalPath: originalPath,
+        regexp: RePath,
+        reloadOnSearch: true,
+        templateUrl: 'views/_page.html'
+      };
+
+      if (path !== '/') {
+        RePath = new RegExp('^\\/'+path+'\\/'+'$');
+        $route.routes[keyPath+'/'] = {
+          keys: [],
+          originalPath: originalPath+'/',
+          regexp: RePath,
+          reloadOnSearch: true,
+          redirectTo: keyPath
+        };
+      }
+
+      return newPage;
+    };
+
+    // Load Pages from Service and bind their Routes
+    $route.routes[''] = {
+      keys: [],
+      originalPath: '',
+      redirectTo: '/',
+      regexp: /^$/,
+    };
     var i;
     for (i=0; i<Site.pages.length; i++) {
       var page = Site.pages[i];
       var path = page.url;
-      var content = page.content;
-      var RePath = new RegExp('^\/'+path+'$');
+      var RePath = new RegExp('^\\/'+path+'$');
+      var originalPath = '/'+path;
 
-      $route.routes['/'+path+'/'] = {
+      var keyPath = '';
+      if (path === '/') {
+        keyPath = path;
+        RePath = new RegExp('^\\'+path+'$');
+        originalPath = path;
+      }
+      else {
+        keyPath = '/'+path;
+      }
+
+      $route.routes[keyPath] = {
         keys: [],
-        originalPath: '/'+path,
+        originalPath: originalPath,
         regexp: RePath,
         reloadOnSearch: true,
-        // template: content,
-        templateUrl: 'views/_page.html',
-        // controller: function($scope) {
-        //   $scope.contents[path] = content;
-        // }
+        templateUrl: 'views/_page.html'
       };
+
+      if (path !== '/') {
+        RePath = new RegExp('^\\/'+path+'\\/'+'$');
+        $route.routes[keyPath+'/'] = {
+          keys: [],
+          originalPath: originalPath+'/',
+          regexp: RePath,
+          reloadOnSearch: true,
+          redirectTo: keyPath
+        };
+      }
     }
+    console.log($route);
 
     // Toggle HTML Editor
     $scope.toggleEdition = function() {
@@ -45,14 +119,14 @@ angular.module('blogTemplateApp')
     // Turn strings with HTML in Trusted HTML
     $scope.trustedHtml = function(html_code) {
       return $sce.trustAsHtml(html_code);
-    }
+    };
 
     // Events Listeners
     $rootScope.$on('$routeChangeSuccess', function() {
       $scope.currentPath = $location.path();
-      //.replace('/','');
+      
       $scope.currentPage = Site.pages.filter(function(e) {
-        if (e.url === $scope.currentPath.replace('/', '')) {
+        if (e.url === $scope.currentPath || e.url === $scope.currentPath.replace('/', '')) {
           return e.content;
         }
       });
