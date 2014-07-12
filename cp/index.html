@@ -7,10 +7,22 @@
   <body>BabelBlogs
   	<script>
   		Parse.initialize("SJ00HRyBkPc30iFhTkn0Oopo3GymfYlnKpaecN3m", "c3ytYcMIQhYv6joutebIQIKNlCJJDYva0JNKK8sc");
-  		var TestObject = Parse.Object.extend("TestObject");
-		var testObject = new TestObject();
-			testObject.save({foo: "bar"}).then(function(object) {
-			  alert("yay! it worked");
+  		var user = new Parse.User();
+			user.set("username", "thejason");
+			user.set("password", "QQ!!ww22");
+			user.set("email", "jasonograves@gmail.com");
+			  
+			// other fields can be set just like with Parse.Object
+			user.set("phone", "732-877-4693");
+			  
+			user.signUp(null, {
+			  success: function(user) {
+			    // Hooray! Let them use the app now.
+			  },
+			  error: function(user, error) {
+			    // Show the error message somewhere and let the user try again.
+			    alert("Error: " + error.code + " " + error.message);
+			  }
 			});
   	</script>
   </body>
