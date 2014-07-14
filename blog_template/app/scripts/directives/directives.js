@@ -2,100 +2,52 @@
 
 angular.module('blogTemplateApp')
 
-/**
- * Main Navigation
-
-.directive('nguiNav', function($location) {
-	return {
-		restrict: 'A',
-		link: function(scope, element) {
-			var currentLocation = $location.path();
-			var currentLocationAnchor = '';
-
-			if (currentLocation !== '/') {
-				currentLocationAnchor = currentLocation.replace('/', '#');
-			}
-			else {
-				currentLocationAnchor = currentLocation;
-			}
-
-			// Add 'active' class to menu item that match the view url
-			element.find('a[ng-href="' + currentLocationAnchor + '"]')
-				.parent()
-					.addClass('active');
-		},
-		templateUrl: 'scripts/directives/_nav.html',
-		replace: true,
-	};
+.directive('compileHtml', function ($compile) {
+  return {
+    restrict: 'A',
+    replace: true,
+    link: function (scope, ele, attrs) {
+      scope.$watch(attrs.compileHtml, function(html) {
+        ele.html(html);
+        $compile(ele.contents())(scope);
+      });
+    }
+  };
 })
- */
 
 /**
- * Content
+ * BabelBlogs Elements
  */
-// .directive('bbContent', function($rootScope, $location, $route, Site) {
+// .directive('bbElement', function() {
 // 	return {
 // 		restrict: 'A',
 // 		scope: false,
 // 		link: function(scope, element) {
-// 			var modalID = '#WYSIWYGModal';
-// 			var editorID = 'editor1';
-// 			var loadEditor = function() {
-// 				CKEDITOR.replace( 'editor1', {
-// 					allowedContent: true
-// 				});
-// 			};
-
-// 			// Edit Rich Text on Click
-// 			// element.on('click', '*[bb-rich-text]', function() {
-// 			// 	scope.beforeSite = JSON.parse( JSON.stringify(scope.site) );
-// 			// 	scope.richTextEditing = element.find('*[ng-bind-html]').html();
-// 			// 	scope.$apply();
-// 			// 	// editor.setData();
-// 			// 	if (!CKEDITOR.instances[editorID]) {
-// 			// 		loadEditor();
-// 			// 	}
-// 			// 	else {
-// 			// 		editor.destroy();
-// 			// 		loadEditor();
-// 			// 	}
-// 			// 	$(modalID).modal('show');
-// 			// });
-
-// 			// Apply Rich Text Changes
-// 			element.on('click', '*[data-apply]', function(event) {
-// 				var pageID = scope.currentPage[0].id;
-// 				var editor = CKEDITOR.instances[editorID];
-// 				element.find('*[bb-rich-text]').html(scope.richTextEditing);
-// 				Site.pages[pageID].content = editor.getData();
+// 			element.click(function() {
+// 				element.attr('draggable');
+// 				if (element.attr('draggable')) {
+// 					element.removeAttr('draggable');
+// 				}
+// 				else {
+// 					element.attr('draggable','');
+// 				}
+// 				var pageID = scope.currentPage.id;
+// 				var newContent = $('#content *[compile-html]').html();
+// 				scope.site.pages[pageID].content = newContent;
 // 				scope.$apply();
-// 				// editor.destroy();
-// 				$(modalID).modal('hide');
 // 			});
-
-// 			// Close Modal
-// 			element.on('click', '*[data-dismiss]', function(event) {
-// 				// editor.destroy();
-// 				$(modalID).modal('hide');
-// 			});
-
-// 			// Event Listener
-// 			$rootScope.$on('$routeChangeSuccess', function() {
-// 				// editor.destroy();
-// 				console.log(CKEDITOR.instances[editorID]);
-// 	    });
-// 		},
-// 		// templateUrl: 'scripts/directives/_toolbar.html',
-// 		// replace: true,
-// 		// transclude: false
+// 		}
 // 	};
 // })
 
-.directive('bbContent', function($location, $route, Site) {
+/**
+ * Content
+ */
+.directive('bbContent', function($compile, $document, $location, $route, Site) {
 	return {
 		restrict: 'A',
 		scope: false,
-		link: function(scope, element) {
+		link: function(scope, element, attrs) {
 			var contentEl = $(this);
 			var modalID = '#WYSIWYGModal';
 			var editorID = 'editor1';
@@ -105,14 +57,31 @@ angular.module('blogTemplateApp')
 				});
 			};
 
-			// Show text editor
-			element.on('dblclick', '*[bb-rich-text]', function() {
+			// Clicks
+			element.on('click', '*[bb-element]', function() {
+				element.find('*[bb-element]').removeAttr('draggable');
+				if ($(this).attr('draggable')) {
+					$(this).removeAttr('draggable');
+				}
+				else {
+					$(this).attr('draggable','');
+				}
+				var pageID = scope.currentPage.id;
+				var newContent = $('#content *[compile-html]').html();
+				scope.site.pages[pageID].content = newContent;
 				scope.$apply();
+			});
+
+			// Show Text Editor
+      element.on('dblclick', '*[bb-rich-text]', function() {
+				// scope.$apply();
 				var richTextID = $(this).attr('id');
-				console.log('richTextID: '+richTextID);
-				scope.beforeSite = JSON.parse( JSON.stringify(scope.site) );
+				// console.log('richTextID: '+richTextID);
+				// scope.beforeSite = JSON.parse( JSON.stringify(scope.site) );
+				scope.bbcore.snapShot();
+
 				scope.richTextEditing = $(this).html();
-				console.log('richTextEditing: '+scope.richTextEditing);
+				// console.log('richTextEditing: '+scope.richTextEditing);
 
 				if (!CKEDITOR.instances[editorID]) {
 					loadEditor();
@@ -123,29 +92,28 @@ angular.module('blogTemplateApp')
 				}
 				var editor = CKEDITOR.instances[editorID];
 				editor.setData(scope.richTextEditing);
-				console.log('getData: '+editor.getData());
+				// console.log('getData: '+editor.getData());
 				$(modalID).modal('show');
 
 				// Apply Rich Text Changes
-				$(modalID).on('click', '*[data-apply]', function(event) {
-					console.log('Applying...');
-					var pageID = scope.currentPage[0].id;
-					var editor = CKEDITOR.instances[editorID];
-					element.find('#'+richTextID).html(editor.getData());
-					console.log('Applying:getData: '+editor.getData());
-					var newContent = $('#content *[ng-bind-html]').html();
-					console.log('newContent: '+newContent);
-					// alert(newContent);
+				$(modalID).on('click', '*[data-apply]', function() {
+          var editor = CKEDITOR.instances[editorID];
+          if (editor){
+            element.find('#'+richTextID).html(editor.getData());
+            editor.destroy();
+          }
+					var pageID = scope.currentPage.id;					
+					var newContent = $('#content *[compile-html]').html();
 					scope.site.pages[pageID].content = newContent;
 					scope.$apply();
-					editor.destroy();
+					scope.bbcore.updateHistorial();
 					$(modalID).modal('hide');
 				});
 
 				// Remove Rich Text
-				$(modalID).on('click', '*[data-remove]', function(event) {
-					var pageID = scope.currentPage[0].id;
-					var newContent = $('#content *[ng-bind-html]').html();
+				$(modalID).on('click', '*[data-remove]', function() {
+					var pageID = scope.currentPage.id;
+					var newContent = $('#content *[compile-html]').html();
 					element.find('#'+richTextID).remove();
 					scope.site.pages[pageID].content = newContent;
 					scope.$apply();
@@ -154,15 +122,60 @@ angular.module('blogTemplateApp')
 				});
 
 				// Close Modal
-				element.on('click', '*[data-dismiss]', function(event) {
+				element.on('click', '*[data-dismiss]', function() {
 					editor.destroy();
 					$('#pageSettingsModal').modal('hide');
 				});
-
 			});
 		},
 		replace: false,
 	};
+})
+
+/**
+ * Draggable Elements
+ */
+.directive('draggable', function($document) {
+  return function(scope, element, attr) {
+    var startX = 0, startY = 0, x = 0, y = 0;
+    element.css({
+      position: 'relative',
+      border: '1px dashed red',
+      cursor: 'move'
+    });
+    
+    element.on('mousedown', function(event) {
+      // Prevent default dragging of selected content
+      scope.$apply();
+      event.preventDefault();
+      startX = event.screenX - x;
+      startY = event.screenY - y;
+      $document.on('mousemove', mousemove);
+      $document.on('mouseup', mouseup);
+    });
+
+    element.on('mouseup', function(event) {
+   //    alert('Element Drop');
+      var pageID = scope.currentPage.id;
+			var newContent = $('#content *[compile-html]').html();
+			scope.site.pages[pageID].content = newContent;
+			scope.$apply();
+    });
+
+    function mousemove(event) {
+      y = event.screenY - startY;
+      x = event.screenX - startX;
+      element.css({
+        top: y + 'px',
+        left:  x + 'px'
+      });
+    }
+
+    function mouseup() {
+      $document.off('mousemove', mousemove);
+      $document.off('mouseup', mouseup);
+    }
+  };
 })
 
 
@@ -174,12 +187,51 @@ angular.module('blogTemplateApp')
 		restrict: 'A',
 		scope: false,
 		link: function(scope, element) {
+			// Undo Changes
+			element.on('click', '*[data-undo]', function() {
+				if (scope.bbcore.edit === true && scope.versions.length) {
+					var pageID = scope.currentPage.id;
+
+					if (scope.versionIndex > 0) {
+						scope.site.pages = scope.versions[scope.versionIndex-1];
+						scope.versionIndex = scope.versionIndex-1;
+					}
+					else {
+						// Disable Button
+					}
+					scope.currentPage = scope.site.pages.filter(function(e){if(e.id === pageID){return e;}})[0];
+					scope.$apply();
+				}
+				else {
+					// Disable Button
+				}
+			});
+
+			// Repeat Changes data-repeat
+			element.on('click', '*[data-repeat]', function() {
+				if (scope.bbcore.edit === true && scope.versions.length) {
+					var pageID = scope.currentPage.id;
+					if (scope.versionIndex+1 < scope.versions.length) {
+					  scope.site.pages = scope.versions[scope.versionIndex+1];
+						// scope.$apply();
+						scope.versionIndex = scope.versionIndex+1;
+					}
+					else {
+						// Disable Button
+					}
+					scope.currentPage = scope.site.pages.filter(function(e){if(e.id === pageID){return e;}})[0];
+					scope.$apply();
+				}
+				else {
+					// Disable Button
+				}
+			});
 
 			// Save Page
-			element.on('click', '*[data-save]', function(event) {
-				localStorage.bbSite01 = JSON.stringify(Site);
+			element.on('click', '*[data-save]', function() {
+				localStorage.bbSite01 = JSON.stringify(scope.site);
 				scope.$apply();
-				$route.reload();
+				// $route.reload(); ?$location?
 				$('#pageSettingsModal').modal('hide');
 			});
 		},
@@ -198,7 +250,7 @@ angular.module('blogTemplateApp')
 		scope: false,
 		link: function(scope, element) {
 			// Toggle Option List
-			element.on('click', 'li', function(event) {
+			element.on('click', 'li', function() {
 				var id = $(this).data('id');
 				// $(id).toggle("slow");
 				$(id).toggleClass('hide');
@@ -234,11 +286,11 @@ angular.module('blogTemplateApp')
 	    });
 
 			// Dialog for Add New Page
-			element.on('click', 'li[data-page-add]', function(event) {
+			element.on('click', 'li[data-page-add]', function() {
 				var modalID = '#AddPageModal';
 				$(modalID).modal('show');
 
-				$(modalID).on('click', '*[data-apply]', function(event) {
+				$(modalID).on('click', '*[data-apply]', function() {
 					var title = scope.NewPage.title;
 					var url = title.split(' ').join('-').toLowerCase();
 					var newPage = scope.bbcore.addPage(title, url, '<div id="bb-rich-text1" bb-element bb-rich-text><p>Double click here in order to edit this paragraph</p></div>');
@@ -249,7 +301,7 @@ angular.module('blogTemplateApp')
 			});
 
 			// Show Page Editor for selected page
-			element.on('click', 'li *[data-page-id]', function(event) {
+			element.on('click', 'li *[data-page-id]', function() {
 				var modalID = '#pageSettingsModal';
 				var pageID = $(this).data('page-id');
 				scope.beforeSite = JSON.parse( JSON.stringify(scope.site) );
@@ -260,7 +312,7 @@ angular.module('blogTemplateApp')
 				$(modalID).modal('show');
 
 				// Remove Page
-				$(modalID).on('click', '*[data-remove]', function(event) {
+				$(modalID).on('click', '*[data-remove]', function() {
 					var pageID = scope.PageEditing.id;
 					scope.site.pages.splice(pageID, 1);
 					scope.PageEditing = {};
@@ -269,14 +321,14 @@ angular.module('blogTemplateApp')
 				});
 
 				// Close Modal
-				$(modalID).on('click', '*[data-dismiss]', function(event) {
+				$(modalID).on('click', '*[data-dismiss]', function() {
 					scope.site = scope.beforeSite = JSON.parse( JSON.stringify(scope.beforeSite) );
 					scope.$apply();
 					$(modalID).modal('hide');
 				});
 
 				// Apply Changes
-				$(modalID).on('click', '*[data-apply]', function(event) {
+				$(modalID).on('click', '*[data-apply]', function() {
 					var priorUrl = (scope.beforeSite.pages[scope.PageEditing.id]).url;
 					var newUrl  = scope.PageEditing.url;
 					var newRoute = $route.routes['/'+priorUrl+'/'];
@@ -292,8 +344,7 @@ angular.module('blogTemplateApp')
 
 					$(modalID).modal('hide');
 				});
-			});
-			
+			});			
 
 
 			/**
@@ -305,13 +356,13 @@ angular.module('blogTemplateApp')
 			 * Insert
 			 */
 			// Insert Text
-			element.on('click', '*[data-insert-text]', function(event) {
+			element.on('click', '*[data-insert-text]', function() {
 				var richTextCount = $('*[bb-rich-text]').length;
 				// console.log(richTextCount.length);
 				var left = 460+(richTextCount*32);
 				var top = 120+(richTextCount*32);
 				richTextCount+=1;
-				$('#content *[ng-bind-html]').append($('<div id="bb-rich-text'+richTextCount+'"'+' bb-element bb-rich-text style="left:'+left+'px; '+'top:'+top+'px; position:absolute"><p jqyoui-draggable="{data-drag: \'true\'}">I\'m a paragraph, double click here in order to add<br/>your own text.</p></div>') );
+				$('#content *[compile-html]').append($('<div id="bb-rich-text'+richTextCount+'"'+' bb-element bb-rich-text style="left:'+left+'px; '+'top:'+top+'px; position:absolute"><p jqyoui-draggable="{data-drag: \'true\'}">I\'m a paragraph, double click here in order to add<br/>your own text.</p></div>') );
 				// scope.$apply();
 			});
 
@@ -330,4 +381,36 @@ angular.module('blogTemplateApp')
 		transclude: false
 	};
 })
+
+
+
+
+/**
+ * Main Navigation
+
+.directive('nguiNav', function($location) {
+	return {
+		restrict: 'A',
+		link: function(scope, element) {
+			var currentLocation = $location.path();
+			var currentLocationAnchor = '';
+
+			if (currentLocation !== '/') {
+				currentLocationAnchor = currentLocation.replace('/', '#');
+			}
+			else {
+				currentLocationAnchor = currentLocation;
+			}
+
+			// Add 'active' class to menu item that match the view url
+			element.find('a[ng-href="' + currentLocationAnchor + '"]')
+				.parent()
+					.addClass('active');
+		},
+		templateUrl: 'scripts/directives/_nav.html',
+		replace: true,
+	};
+})
+ */
+
 ;

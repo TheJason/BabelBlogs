@@ -5,9 +5,9 @@
   <h3 class="text-muted">{{ site.name }}</h3>
 </div>
 
-<div id="content" class="content" bb-content ng-repeat="page in currentPage">
-  <h1 ng-hide="page.url==='/'">{{ page.title }}</h1>
-  <div ng-bind-html="trustedHtml(page.content)"></div>
+<div id="content" class="content" bb-content>
+  <h1 ng-hide="currentPage.url==='/'">{{ currentPage.title }}</h1>
+  <div compile-html="currentPage.content"></div>
 </div>
 
 <!-- Modal -->

@@ -5,11 +5,32 @@ angular.module('blogTemplateApp')
   /**
    * BabelBlogs Core Controller
    */
-  .controller('BBCoreCtrl', function ($sce, $rootScope, $scope, $route, $location, Site) {
+  .controller('BBCoreCtrl', function ($compile, $sce, $rootScope, $scope, $route, $location, Site) {
     $scope.bbcore = {};
     $scope.bbcore.edit = true;
     $scope.site = Site;
-    $scope.contents = {};
+    $scope.versions = [];
+    // $scope.contents = {};
+
+    // Snapshot Current Site Changes
+    $scope.bbcore.snapShot = function() {
+      // $scope.versions.push($scope.beforeSite.pages);
+      $scope.beforeSite = JSON.parse( JSON.stringify($scope.site) );
+    };
+
+    // Update Changes Historial
+    $scope.bbcore.updateHistorial = function() {
+      if ($scope.versionIndex && $scope.versions){
+        $scope.versions = $scope.versions.slice(0, $scope.versionIndex);
+      }
+      $scope.versions.push($scope.beforeSite.pages);
+      $scope.versions.push($scope.site.pages);
+      $scope.beforeSite=[];
+
+      $scope.versionIndex = $scope.versions.length-1;
+      // console.log('::versions:length: '+$scope.versions.length);
+      // console.log('::versionIndex:: '+$scope.versionIndex);
+    };
 
     // Function which add a new page
     $scope.bbcore.addPage = function(name, path, content) {
@@ -104,7 +125,7 @@ angular.module('blogTemplateApp')
         };
       }
     }
-    console.log($route);
+    // console.log($route);
 
     // Toggle HTML Editor
     $scope.toggleEdition = function() {
@@ -116,20 +137,25 @@ angular.module('blogTemplateApp')
       }
     };
 
-    // Turn strings with HTML in Trusted HTML
-    $scope.trustedHtml = function(html_code) {
-      return $sce.trustAsHtml(html_code);
+    // Turn strings with HTML tags in Trusted HTML
+    $scope.trustedHtml = function(htmlCode) {
+      return $sce.trustAsHtml(htmlCode);
     };
 
+    // Turn strings with HTML tags in Trusted HTML
+    $scope.compile = function(htmlCode) {
+      return $compile( htmlCode )( $scope );
+    };
+    
     // Events Listeners
     $rootScope.$on('$routeChangeSuccess', function() {
       $scope.currentPath = $location.path();
-      
       $scope.currentPage = Site.pages.filter(function(e) {
         if (e.url === $scope.currentPath || e.url === $scope.currentPath.replace('/', '')) {
           return e.content;
         }
-      });
+      })[0];
+      $scope.versions = [];
     });
   })
 

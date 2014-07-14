@@ -6,7 +6,7 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'ngDragDrop'
+    'ui.sortable',
   ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
