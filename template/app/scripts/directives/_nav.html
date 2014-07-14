@@ -1,0 +1,34 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="toggleMenu()" data-toggle="collapse" data-target="">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><a href="/" title=""><img class="brand-logo" ng-src="../images/logo_green01.png" height="32" alt=""><img class="brand-name" ng-src="../images/brand_name01.png" height="32" alt=""></a></div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">          
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ng-href="/">HOME</a></li>
+        <li><a ng-href="#tour">TOUR</a></li>
+        <li><a ng-href="#features">FEATURES</a></li>
+        <li><a ng-href="#templates">TEMPLATES</a></li>
+        <li><a ng-href="#pricing">PRICING</a></li>
+        <li><a ng-href="#sign-in">SIGN IN</a></li>
+        <li><a ng-href="#sign-up">SIGN UP</a></li>
+        <li ng-click="toggleMenu()">
+          <a href class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

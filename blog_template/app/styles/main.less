@@ -1,0 +1,165 @@
+/**
+ * Variables
+ */ 
+@base-color: #0199fc;
+@text-color: darken(@base-color, 10%);
+@body-bg:    lighten(@base-color, 28%);
+//00FC83
+
+
+/**
+ * Mixins
+ */ 
+.border-dashed() {
+	border: 1px dashed darken(azure, 28%);
+}
+
+.center {
+	display: table;
+	margin: 0 auto;
+}
+
+
+/**
+ * Template Styles
+ */
+body {
+	background: @body-bg !important;
+
+	// When BabelBlogs Editor is enabled
+	&.edit {
+		.border-dashed;
+		padding-top: 40px;
+		.header, .footer, .content {
+			.border-dashed;
+		}
+		div[bb-block] {
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: #FFFFC2;		
+			}	
+		}
+	}
+}
+
+
+#page-wrapper {
+	background: #FFF;
+}
+
+.content {
+	width: 80% !important;
+	margin: 0 auto;
+}
+
+
+/**
+ * ToolBar
+ */
+.bb-toolbar {
+	width: 100%;
+	background: #414141;
+	position: absolute;
+	height: 40px;
+	top: 0;
+	padding: 3px 20px 0px 20px;
+	color: #FFF;
+	.options {
+		float: right;
+	}
+	.brand-logo {
+		height: 34px;
+		img {
+			height: 34px;
+		}
+	}
+}
+
+
+
+/**
+ * ToolBox
+ */
+ @toolbox-bg: #FFF;
+
+.bb-toolbox {
+	position: fixed;
+	min-width: 160px;
+	font-size: 14px;
+	border-radius: 10px;
+	background: @toolbox-bg;
+	box-shadow: 1px 1px 1px #888;
+	margin: 30px 20px 0px 20px;
+	color: @gray-dark;
+	z-index: 999;
+	ul {
+		list-style: none;
+		padding: 10px 15px 0px 15px;
+		li#page-list {
+			ul {
+				li {
+					padding-left: 7px;
+					border-left: 2px solid @toolbox-bg;				
+					.glyphicon {
+						font-size: 14px !important;
+						float: right;
+						display: none;
+						color: #d5d379;
+					}
+					&:hover {
+						border-bottom: 2px solid @toolbox-bg !important;
+						border-left: 2px solid #d5d379;
+						.glyphicon {
+							display: inline-block;
+						}
+					}
+					&.active {
+						border-bottom: 2px solid @toolbox-bg !important;
+						border-left: 2px solid #d5d379;
+						.glyphicon {
+							display: inline-block;
+						}
+					}
+					&[data-page-add] {
+						.glyphicon {
+							font-size: 14px;
+							float: none;
+							display: inline-block;
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
+		li {
+			margin-bottom: 10px;
+			transition: all 0.3s ease;
+			border-bottom: 2px solid @toolbox-bg;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			&:hover {
+				border-bottom: 2px solid #d5d379;
+			}
+			a {
+				display: inline-block;
+				width: 85%;
+				text-decoration: none;
+				+.glyphicon {
+					font-size: 18px;
+					width: 15%;
+				}
+			}
+		}
+	}	
+}
+
+/**
+ * BabelBlogs Componets
+ */
+
+// *[bb-element] {
+// 	&:focus, &:active, &:hover {
+// 		background: red;
+// 	}
+// }
