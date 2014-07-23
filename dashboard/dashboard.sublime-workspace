@@ -4,20 +4,40 @@
 		"selected_items":
 		[
 			[
-				"he",
-				"height"
+				"input",
+				"input	input - text"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"feat",
+				"featured"
+			],
+			[
+				"pa",
+				"padding-top"
 			],
 			[
 				"tex",
-				"text-decoration"
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
 			],
 			[
 				"bo",
 				"border"
-			],
-			[
-				"input",
-				"input	input - password"
 			],
 			[
 				"to",
@@ -30,10 +50,6 @@
 			[
 				"data",
 				"data_list"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"min",
@@ -52,10 +68,6 @@
 				"location	jsWindow"
 			],
 			[
-				"fon",
-				"font-style"
-			],
-			[
 				"wi",
 				"with	with"
 			],
@@ -70,10 +82,6 @@
 			[
 				"bor",
 				"border"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"pad",
@@ -114,10 +122,6 @@
 			[
 				"list",
 				"list-style"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"string",
@@ -296,26 +300,42 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/index.html",
+			"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/model.py",
 			"settings":
 			{
-				"buffer_size": 10686,
+				"buffer_size": 8722,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/main.less",
+			"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/kwik.py",
 			"settings":
 			{
-				"buffer_size": 3668,
+				"buffer_size": 1740,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/kwik-list-start.txt",
+			"settings":
+			{
+				"buffer_size": 19009,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/Gruntfile.js",
+			"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/items.py",
 			"settings":
 			{
-				"buffer_size": 12112,
+				"buffer_size": 2157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/pipelines.py",
+			"settings":
+			{
+				"buffer_size": 17060,
 				"line_ending": "Unix"
 			}
 		}
@@ -329,6 +349,30 @@
 			[
 				"html",
 				"Set Syntax: HTML5"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-button-group"
+			],
+			[
+				"button",
+				"Snippet: bs3-button-default"
+			],
+			[
+				"modal",
+				"Snippet: bs3-modal"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"in",
@@ -351,10 +395,6 @@
 				"API-Completion-Package: Settings – Default"
 			],
 			[
-				"less",
-				"Set Syntax: LESS"
-			],
-			[
 				"pyt",
 				"Set Syntax: Python Django"
 			],
@@ -365,10 +405,6 @@
 			[
 				"html5",
 				"Set Syntax: HTML5"
-			],
-			[
-				"inde",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"javasc",
@@ -417,10 +453,6 @@
 			[
 				"tid",
 				"Tidy HTML"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"com",
@@ -472,31 +504,53 @@
 	},
 	"file_history":
 	[
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/Gruntfile.js",
-		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/images/slide03.jpg",
-		"/C/Users/David/AppData/Local/Temp/fz3temp-1/sw_json_parser.py",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/main.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_header.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_nav.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/index.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/main.less",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/directives.js",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/sign-up.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_footer.html",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-2/check-upcs-kwik.txt",
+		"/C/Users/David/Downloads/kwik-list-start.csv",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/scripts/app.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/scripts/controllers/main.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/scripts/services/services.js",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/controllers/main.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/views/_header.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/styles/main.less",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-2/kwik.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/index.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/services/services.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/features.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/sign-in.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Gladiator/www/js/controllers.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_testimonials_slide.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/main.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/main.less",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/app.js",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_push_right_menu.html",
-		"/C/Users/David/AppData/Local/Temp/fz3temp-1/settings.py",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_accordion.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/faq.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/features.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_features_header.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_header.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/pricing.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/tour.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/variables.less",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/content-policy.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_nav.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/blog.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/_accordion.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/node_modules/grunt-svgmin/node_modules/svgo/plugins/_collections.js",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/shopwell.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/sign-up.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/blog-entry.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/templates.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/faq.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/bower_components/jquery/src/var/push.js",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/sw_json_parser.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/scripts/directives/directives.js",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_footer.html",
+		"/C/Users/David/AppData/Local/Temp/fz3temp-1/settings.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/styles/faq.html",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/tour.html",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-1/sw_items.json",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-2/sw_json_parser.py",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-2/amazon_new.py",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-2/settings.py",
+		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/Gruntfile.js",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/app/views/_nav.html",
 		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/main.less",
 		"/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/variables.less",
@@ -504,7 +558,6 @@
 		"/C/Users/David/Downloads/SW Field Mapping - Sheet1.csv",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-1/model.py",
 		"/C/Users/David/AppData/Local/Temp/fz3temp-1/pipelines.py",
-		"/C/Users/David/AppData/Local/Temp/fz3temp-1/shopwell.py",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/dist/views/main.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/template/dist/index.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/main.less",
@@ -518,7 +571,6 @@
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/templates.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/features.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/scripts/app.js",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/Gladiator/www/js/controllers.js",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/styles/variables.less",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/_footer.html",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/app/views/include.html",
@@ -579,27 +631,7 @@
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/lib/ionic/scss/_variables.scss",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/gulpfile.js",
 		"/C/Backup/Trabajos/odesk.com/projects/Jason/bkp_develop_yeoman/app/scripts/controllers/main.js",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/models.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/admin.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/views.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/iglesia/settings.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/bootstrap_theme/templates/base.html",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/templates/miembros.html",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/urls.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/iglesia/urls.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/forms.py",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/package.json",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-dash.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/www/templates/tab-account.html",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/bootstrap_theme/__init__.py",
-		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/urls.py",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/gladiator/app/styles/main.less",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/www/index.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/www/templates/tabs.html",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/scss/ionic.app.scss",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/package.json",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/gulpfile.js",
-		"/C/Backup/Trabajos/odesk.com/projects/Jason/myApp/www/js/app.js"
+		"/C/Users/David/Downloads/virtualenv-1.10.1/virtualenv-1.10.1/dahiana/iglesia/membresia/models.py"
 	],
 	"find":
 	{
@@ -617,26 +649,93 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"imagemin",
-			"images/",
-			"slide0",
-			"slide01",
-			".css",
-			"images/",
-			"/images",
-			"img",
-			"border",
-			"circle",
-			"zoom",
-			"blur",
-			"trans",
-			"hover",
-			"tran",
-			"pau",
-			"images",
+			"print",
+			",",
+			"kw",
+			"bool",
+			"alert",
+			"site",
+			"current",
+			"alert",
+			"dash",
+			" \"",
+			"ioni",
+			"ionic",
+			"function",
+			"sign",
+			"sign u",
+			"'Sign",
+			"contro",
+			"no-bg",
+			"red",
+			"h3",
+			"span",
+			"footer",
+			"varia",
+			"body",
+			"back",
+			"line-",
+			"h2",
+			"p",
+			"push",
+			"small",
+			".small",
+			"small",
+			"boo",
+			"class",
+			"color",
+			"feature",
+			"p>",
+			"<p",
+			"h4",
+			"td>",
+			"free",
+			"brand",
 			"slide",
-			"images",
-			".css",
+			"featu",
+			"<td><i",
+			"<td",
+			"No",
+			"Yes",
+			"privacy",
+			"other site",
+			"cookies",
+			"con",
+			"testi",
+			"inclu",
+			"ipad",
+			"logo",
+			"logo_",
+			"logo",
+			"logo_",
+			"bg",
+			"<img src=\"../images/template1.jpg\" alt=\"\" height=\"240\" width=\"240\">",
+			"active",
+			"</div>",
+			"<h3>",
+			"</div>",
+			"<h3>",
+			"brand",
+			"nav",
+			"brand",
+			"red",
+			"brand",
+			"footer",
+			"brand",
+			"content",
+			" brand",
+			"content",
+			"logo",
+			"media",
+			"body",
+			"media",
+			"html",
+			"body",
+			"deskto",
+			"@",
+			"overf",
+			"body",
+			"html",
 			"product",
 			"body",
 			"width",
@@ -677,74 +776,7 @@
 			"views/",
 			"views",
 			"usemin",
-			"src",
-			"usemin",
-			"ng-s",
-			"rev",
-			"240",
-			"\"240\"",
-			"src",
-			"img",
-			"conso",
-			"bg0",
-			"320",
-			"bg",
-			"on\"",
-			"list-",
-			"btn",
-			"alert",
-			"show",
-			"sow",
-			"ng-",
-			"home",
-			"Block",
-			"hr",
-			"content",
-			"bg",
-			"content",
-			"body",
-			"$on",
-			"hei",
-			"hea",
-			"subpage",
-			"sty",
-			"#",
-			"p>",
-			"p",
-			"try",
-			"print",
-			"upc_formatted",
-			"000000",
-			"0000000",
-			"00000000",
-			"+",
-			"gray",
-			"color",
-			"padd",
-			"font-s",
-			"font-",
-			"padd",
-			" a",
-			"center",
-			"text-",
-			"back",
-			"border",
-			"contro",
-			"ctrl",
-			"ui.",
-			".",
-			"ng-",
-			"class",
-			"$scope.",
-			"wrap",
-			"button",
-			"style",
-			"response.url",
-			"butt",
-			"wrapper",
-			"direc",
-			"padd",
-			" a"
+			"src"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -752,6 +784,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"ng-href",
 			"YouTube",
 			"youtube",
@@ -788,18 +821,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/index.html",
+					"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/model.py",
 					"settings":
 					{
-						"buffer_size": 10686,
+						"buffer_size": 8722,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								799,
-								799
+								7334,
+								7331
 							]
 						],
 						"settings":
@@ -1000,30 +1033,30 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/Djaneiro-master/Syntaxes/HTML (Django).tmLanguage",
+							"syntax": "Packages/Djaneiro-master/Syntaxes/Python Django.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 3438.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/app/styles/main.less",
+					"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/kwik.py",
 					"settings":
 					{
-						"buffer_size": 3668,
+						"buffer_size": 1740,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3337,
-								3337
+								1236,
+								1236
 							]
 						],
 						"settings":
@@ -1224,30 +1257,30 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Djaneiro-master/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2944.0,
+						"translation.y": 64.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Backup/Trabajos/Pauhana Surfing/template_surfari/Gruntfile.js",
+					"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/kwik-list-start.txt",
 					"settings":
 					{
-						"buffer_size": 12112,
+						"buffer_size": 19009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10121,
-								10121
+								2321,
+								2331
 							]
 						],
 						"settings":
@@ -1448,12 +1481,458 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Djaneiro-master/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2807.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/items.py",
+					"settings":
+					{
+						"buffer_size": 2157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1835,
+								1835
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Djaneiro-master/Syntaxes/Python Django.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4536.0,
+						"translation.y": 1067.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/David/AppData/Local/Temp/fz3temp-2/pipelines.py",
+					"settings":
+					{
+						"buffer_size": 17060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16591,
+								16591
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Djaneiro-master/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7901.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1511,12 +1990,144 @@
 		"selected_items":
 		[
 			[
-				"main.l",
+				"ser",
+				"app/scripts/services/services.js"
+			],
+			[
+				"main.",
 				"app/styles/main.less"
+			],
+			[
+				"_h",
+				"app/views/_header.html"
+			],
+			[
+				"main",
+				"app/views/main.html"
 			],
 			[
 				"inde",
 				"app/index.html"
+			],
+			[
+				"nav",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"sign",
+				"app/views/sign-in.html"
+			],
+			[
+				"header",
+				"app/views/_header.html"
+			],
+			[
+				"feat",
+				"app/views/features.html"
+			],
+			[
+				"v",
+				"app/styles/variables.less"
+			],
+			[
+				"",
+				"app/styles/main.less"
+			],
+			[
+				"pricin",
+				"app/views/pricing.html"
+			],
+			[
+				"tes",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"fea",
+				"app/views/features.html"
+			],
+			[
+				"pricing",
+				"app/views/pricing.html"
+			],
+			[
+				"test",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"varia",
+				"app/styles/variables.less"
+			],
+			[
+				"featu",
+				"app/views/features.html"
+			],
+			[
+				"push",
+				"app/scripts/directives/_push_right_menu.html"
+			],
+			[
+				"blog",
+				"app/views/blog.html"
+			],
+			[
+				"_",
+				"node_modules/grunt-svgmin/node_modules/svgo/plugins/_collections.js"
+			],
+			[
+				"_ac",
+				"app/scripts/directives/_accordion.html"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"main.l",
+				"app/styles/main.less"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"testi",
+				"app/views/_testimonials_slide.html"
+			],
+			[
+				"_nav",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"templ",
+				"app/views/templates.html"
+			],
+			[
+				"template",
+				"app/views/templates.html"
+			],
+			[
+				"_na",
+				"app/scripts/directives/_nav.html"
+			],
+			[
+				"_header",
+				"app/views/_header.html"
+			],
+			[
+				"ervi",
+				"app/scripts/services/services.js"
+			],
+			[
+				"faq",
+				"app/views/faq.html"
+			],
+			[
+				"main.j",
+				"app/scripts/controllers/main.js"
 			],
 			[
 				"upsert",

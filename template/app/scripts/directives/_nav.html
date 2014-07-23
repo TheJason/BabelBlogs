@@ -19,8 +19,16 @@
         <li><a ng-href="#features">FEATURES</a></li>
         <li><a ng-href="#templates">TEMPLATES</a></li>
         <li><a ng-href="#pricing">PRICING</a></li>
-        <li><a ng-href="#sign-in">SIGN IN</a></li>
-        <li><a ng-href="#sign-up">SIGN UP</a></li>
+        <li ng-hide="user.isLogin"><a ng-href="#sign-in">SIGN IN</a></li>
+        <li ng-hide="user.isLogin"><a ng-href="#sign-up">SIGN UP</a></li>
+        <li ng-show="user.isAuthenticated()" ng-click="logOut()"><a ng-href="">LOG OUT</a></li>
+        <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul> -->
         <li ng-click="toggleMenu()">
           <a href class="navbar-toggle">
             <span class="icon-bar"></span>

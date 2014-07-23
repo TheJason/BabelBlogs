@@ -3,8 +3,8 @@
     <ul>
       <li data-id="#page-list"><a ng-href="" title=""><span class="glyphicon glyphicon-list-alt"></span> Pages</a></li>
       <li id="page-list" class="hide">
-        <ul ui-sortable ng-model="site.pages">
-          <li ng-repeat="page in site.pages track by page.id"><a ng-href="#{{page.url}}" title="">{{ page.title }}</a><span data-page-id="{{ page.id }}" class="glyphicon glyphicon-edit"></span></li>
+        <ul ui-sortable="bbcore.sortablePageMenuOptions" ng-model="bbcore.site.pages">
+          <li ng-repeat="page in bbcore.site.pages track by page.url"><a ng-href="#{{ page.url }}" title="">{{ page.title }}</a><span data-page-id="{{ page.pageId }}" class="glyphicon glyphicon-edit"></span></li>
           <hr/>
           <li data-page-add><span class="glyphicon glyphicon-plus"></span> New Page</li>
         </ul>

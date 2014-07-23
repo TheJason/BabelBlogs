@@ -16,9 +16,11 @@ angular
       })
       .when('/sign-in', {
         templateUrl: 'views/sign-in.html',
+        controller: 'SignInCtrl'
       })
       .when('/sign-up', {
         templateUrl: 'views/sign-up.html',
+        controller: 'SignUpCtrl'
       })
       .when('/tour', {
         templateUrl: 'views/tour.html',

@@ -39,6 +39,11 @@ body {
 				background-color: #FFFFC2;		
 			}	
 		}
+		*[draggable] {
+		  position: absolute;
+		  border: 2px dashed #e1e1e1 !important;
+		  cursor: move;
+		}
 	}
 }
 
@@ -50,6 +55,7 @@ body {
 .content {
 	width: 80% !important;
 	margin: 0 auto;
+	min-height: 460px;
 }
 
 
@@ -64,6 +70,7 @@ body {
 	top: 0;
 	padding: 3px 20px 0px 20px;
 	color: #FFF;
+	z-index: 999;
 	.options {
 		float: right;
 	}
@@ -151,8 +158,10 @@ body {
 				}
 			}
 		}
-	}	
+	}
 }
+
+
 
 /**
  * BabelBlogs Componets
@@ -163,3 +172,8 @@ body {
 // 		background: red;
 // 	}
 // }
+
+*[bb-element] {
+	position: absolute;
+	border: 2px dashed transparent;
+}
