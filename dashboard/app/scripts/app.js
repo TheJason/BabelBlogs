@@ -13,6 +13,14 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/sign-in', {
+        templateUrl: 'views/sign-in.html',
+        controller: 'SignInCtrl'
+      })
+      .when('/logout', {
+        templateUrl: 'views/logout.html',
+        controller: 'LogOutCtrl'
+      })
       .when('/overview', {
         templateUrl: 'views/main.html',
         controller: 'OverViewCtrl'

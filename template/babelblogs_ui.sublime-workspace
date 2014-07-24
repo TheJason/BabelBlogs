@@ -303,7 +303,7 @@
 			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 8413,
+				"buffer_size": 8416,
 				"line_ending": "Windows"
 			}
 		},
@@ -311,7 +311,7 @@
 			"file": "app/views/sign-up.html",
 			"settings":
 			{
-				"buffer_size": 1070,
+				"buffer_size": 1068,
 				"line_ending": "Windows"
 			}
 		},
@@ -335,7 +335,7 @@
 			"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/index.html",
 			"settings":
 			{
-				"buffer_size": 2723,
+				"buffer_size": 3106,
 				"line_ending": "Unix"
 			}
 		},
@@ -343,7 +343,7 @@
 			"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/views/main.html",
 			"settings":
 			{
-				"buffer_size": 943,
+				"buffer_size": 3133,
 				"line_ending": "Unix"
 			}
 		},
@@ -351,7 +351,7 @@
 			"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/styles/main.less",
 			"settings":
 			{
-				"buffer_size": 91,
+				"buffer_size": 126,
 				"line_ending": "Windows"
 			}
 		},
@@ -360,6 +360,14 @@
 			"settings":
 			{
 				"buffer_size": 2404,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/sign-in.html",
+			"settings":
+			{
+				"buffer_size": 918,
 				"line_ending": "Windows"
 			}
 		}
@@ -827,7 +835,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -835,15 +843,15 @@
 					"file": "app/scripts/controllers/main.js",
 					"settings":
 					{
-						"buffer_size": 8413,
+						"buffer_size": 8416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4822,
-								4804
+								7523,
+								7523
 							]
 						],
 						"settings":
@@ -1049,7 +1057,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2554.0,
+						"translation.y": 2592.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1059,15 +1067,15 @@
 					"file": "app/views/sign-up.html",
 					"settings":
 					{
-						"buffer_size": 1070,
+						"buffer_size": 1068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1070,
-								1070
+								1068,
+								1068
 							]
 						],
 						"settings":
@@ -1731,15 +1739,15 @@
 					"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/index.html",
 					"settings":
 					{
-						"buffer_size": 2723,
+						"buffer_size": 3106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								680,
-								680
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1955,15 +1963,15 @@
 					"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/views/main.html",
 					"settings":
 					{
-						"buffer_size": 943,
+						"buffer_size": 3133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								340,
-								340
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2179,15 +2187,15 @@
 					"file": "/C/Backup/Trabajos/odesk.com/projects/Jason/Babel Blogs/babelblogs/dashboard/app/styles/main.less",
 					"settings":
 					{
-						"buffer_size": 91,
+						"buffer_size": 126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2363,6 +2371,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
 							"sublime_auto_complete": true,
 							"sublimelinter": true,
 							"sublimelinter_delay": 2.0,
@@ -2386,6 +2395,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
+							"synced": false,
 							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -2615,6 +2625,126 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/sign-in.html",
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								812
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Djaneiro-master/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -2669,16 +2799,20 @@
 		"selected_items":
 		[
 			[
+				"sign",
+				"app/views/sign-in.html"
+			],
+			[
+				"",
+				"app/views/sign-up.html"
+			],
+			[
 				"nav",
 				"app/scripts/directives/_nav.html"
 			],
 			[
 				"app",
 				"app/scripts/app.js"
-			],
-			[
-				"sign",
-				"app/views/sign-in.html"
 			],
 			[
 				"main",
@@ -2695,10 +2829,6 @@
 			[
 				"v",
 				"app/styles/variables.less"
-			],
-			[
-				"",
-				"app/styles/main.less"
 			],
 			[
 				"pricin",

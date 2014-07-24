@@ -302,6 +302,7 @@ angular.module('babelBlogsApp')
 ])
 
 
+
 /**
  * Blog Controller
  */
@@ -312,6 +313,7 @@ angular.module('babelBlogsApp')
 ])
 
 
+
 /**
  * Blog Entry Controller
  */
@@ -320,6 +322,7 @@ angular.module('babelBlogsApp')
 		$scope.article = blogPosts.articles[$routeParams.id];
 	}
 ])
+
 
 
 /**
