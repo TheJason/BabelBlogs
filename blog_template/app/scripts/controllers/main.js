@@ -36,7 +36,8 @@ angular.module('blogTemplateApp')
       query.equalTo('objectId','Y4KkHHrfrQ');
       query.find().then(function(site) {
         var Site = JSON.parse(site[0].get('schema'));
-        $scope.bbcore.site = JSON.parse(site[0].get('schema'));
+        console.log( 'Schema'+JSON.parse(site[0].get('schema') ) );
+        $scope.bbcore.site = JSON.parse(site[0].get('schema') );
         $scope.bbcore.siteQuery = site;
         $scope.$apply();
         return $scope.bbcore.site;

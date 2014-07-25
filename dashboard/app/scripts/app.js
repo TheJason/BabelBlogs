@@ -25,8 +25,12 @@ angular
         templateUrl: 'views/main.html',
         controller: 'OverViewCtrl'
       })
+      .when('/settings', {
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsCtrl'
+      })
       .when('/billing', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/billing.html',
         controller: 'BillingCtrl'
       })
       .otherwise({

@@ -10,25 +10,15 @@
       <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#">Settings</a></li>      
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>      
       <li role="presentation" class="divider"></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#logout">Log Out</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#logout"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
     </ul>
   </div>
+
   <h3 class="text-muted">Babel Blogs</h3>
   <div class="container">
-    <div class="btn-group btn-group-lg center">
-      <button type="button" class="btn btn-default">Overview</button>
-      <button type="button" class="btn btn-default">Billing</button>
-      <button type="button" class="btn btn-default">Support</button>
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        Settings
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a ng-href="#">Account Options</a></li>
-        <li><a ng-href="#">Language</a></li>
-      </ul>
-    </div>
+    <!-- nav -->
+    <div bb-dashboard-nav></div>
   </div>
 </div>

@@ -31,6 +31,8 @@ angular.module('dashboardApp')
           // Verify if Site is 
           // alert($scope.newSite.title);
           Site.addNewSite($scope.newSite.title);
+          // $scope.location.path('/');
+          window.location.href = '/';
         };
       }
     })();
@@ -61,20 +63,18 @@ angular.module('dashboardApp')
 
       // Function that Create a Session if username and password are valid.
       $scope.SignIn = function() {
-        alert('SignIn...');
         if ( !user.current() ) {
           /**
            * Validate Inputs
            */
-           alert('Verifying inputs...');
           // Check if the username is provided
           if (!$scope.login.name) {
-            $scope.showAlert('Missing User Name', 'Please provide a valid user name.');
+            alert('Missing User Name', 'Please provide a valid user name.');
             $scope.hide();
             return;
           }
           else if (!$scope.login.password) {
-            $scope.showAlert('Missing Password', 'Please provide a password.');
+            alert('Missing Password', 'Please provide a password.');
             $scope.hide();
             return;
           }
@@ -82,9 +82,7 @@ angular.module('dashboardApp')
           /**
            * Try to log in
            */
-          alert('Trying to log in...');
           user.logIn($scope.login.name, $scope.login.password).then(function(user) {
-            alert('Logged...');
             $scope.user.isLogin = true;
             // Clear Form data
             $scope.login.password = '';
@@ -137,15 +135,14 @@ angular.module('dashboardApp')
   .controller('BillingCtrl', function ($scope, $location, user) {
     // User Data
     $scope.user = user;
+  })
 
-    /**
-     * Function which verify if user is Authenticathed
-     * If user is authenticated then redirects to main view
-     */
-    (function() {
-      if ( user.current() ) {
-        $scope.user.isLogin = false;
-        $location.path('/');
-      }
-    })();
+
+
+  /**
+   * Settings Controller
+   */
+  .controller('SettingsCtrl', function ($scope, $location, user) {
+    // User Data
+    $scope.user = user;
   });

@@ -276,7 +276,7 @@ angular.module('blogTemplateApp')
 // 		};
 
 	}
-	console.log(JSON.stringify(siteSchema));
+	// console.log(JSON.stringify(siteSchema));
 	return siteSchema;
 })
 
