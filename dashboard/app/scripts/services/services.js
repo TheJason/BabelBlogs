@@ -107,7 +107,7 @@ angular.module('dashboardApp')
   /**
    * User
    */
-  .factory('user', function($location, $rootScope) {  
+  .factory('user', function($location, $rootScope) {
     return {
       logIn: function(username, password) {
         $rootScope.$broadcast('event:sessionUpdated');
@@ -160,13 +160,13 @@ angular.module('dashboardApp')
         site.set('schema', JSON.stringify(newSchema));
         // TODO: User promise
         site.save(null, {
-  			  success: function(site) {
-  			    // alert('New object created with objectId: ' + site.id);
-  			  },
-  			  error: function(site, error) {
-  			    alert('Failed to create new object, with error code: ' + error.message);
-  			  }
-  			});
+          success: function(site) {
+            // alert('New object created with objectId: ' + site.id);
+          },
+          error: function(site, error) {
+            alert('Failed to create new object, with error code: ' + error.message);
+          }
+        });
       },
       sites: [],
 

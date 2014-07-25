@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "babelblogs"
+        }, 
+        "babelblogs": {
+            "applicationId": "SJ00HRyBkPc30iFhTkn0Oopo3GymfYlnKpaecN3m", 
+            "masterKey": "3VYwYB9A949ieYNhUlwAXxSVgbFteqJ8jBufvqr5"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}
