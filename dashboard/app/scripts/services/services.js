@@ -146,15 +146,20 @@ angular.module('dashboardApp')
    */
   .factory('Site', function($rootScope) {
     var Site = {
+      server: 'bblogs.co:9000',
       // Function which creates a new site for the current user.
-      addNewSite: function(siteTitle, siteDescription, siteUrl) {
+      addNewSite: function(options) {
         var Site = Parse.Object.extend('Site');
         var site  = new Site();
         var userId = Parse.User.current().id;
 
+        var siteTitle = options.siteTitle || '';
+        var siteUrl = options.siteUrl || '';
+
         var newSchema = JSON.parse( JSON.stringify(siteSchema) );
         newSchema.siteName = siteTitle;
 
+        site.set('url', siteUrl);
         site.set('title', siteTitle);
         site.set('userId', userId);
         site.set('schema', JSON.stringify(newSchema));
@@ -162,6 +167,7 @@ angular.module('dashboardApp')
         site.save(null, {
           success: function(site) {
             // alert('New object created with objectId: ' + site.id);
+            window.location.href = '/site/new?id='+site.id;
           },
           error: function(site, error) {
             alert('Failed to create new object, with error code: ' + error.message);

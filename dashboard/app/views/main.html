@@ -26,10 +26,10 @@
           <div class="panel-body">
             Last Update: {{website.updatedAt|date}} <br/>
             <hr/>
-            <button type="button" class="btn btn-default">Remove</button>
-            <button type="button" class="btn btn-default">Preview</button>
-            <button type="button" class="btn btn-default">Transfer</button>
-            <button type="button" class="btn btn-primary">Upgrade</button>
+            <a href="#" title="" class="btn btn-default">Manage</a>            
+            <a ng-href="http://{{website.url}}.{{site.server}}" title="" class="btn btn-primary">Preview</a>
+            <a href="#" title="" class="btn btn-default">Settings</a>
+            <a href="#" title="" class="btn btn-primary">Upgrade</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,11 @@
           <!-- <legend>Form title</legend> -->
           <div class="form-group">
             <label for="">Site URL</label>
-            <input type="text" class="form-control" id="url" placeholder="Site URL" ng-model="newSite.url">
+            <div class="input-group">
+              <input type="text" class="form-control" ng-model="newSite.url">
+              <span class="input-group-addon">.bblogs.co</span>
+            </div>
+            <!-- <input type="text" class="form-control" id="url" placeholder="Site URL" ng-model="newSite.url"> -->
 
             <label for="">Site Title</label>
             <input type="text" class="form-control" id="url" placeholder="Site Title" ng-required ng-model="newSite.title">

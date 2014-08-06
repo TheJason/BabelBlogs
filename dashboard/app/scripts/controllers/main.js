@@ -30,9 +30,11 @@ angular.module('dashboardApp')
         $scope.addNewSite = function() {
           // Verify if Site is 
           // alert($scope.newSite.title);
-          Site.addNewSite($scope.newSite.title);
-          // $scope.location.path('/');
-          window.location.href = '/';
+          // Site.addNewSite($scope.newSite.title);
+          Site.addNewSite({
+            siteTitle: $scope.newSite.title,
+            siteUrl: $scope.newSite.url,
+          });
         };
       }
     })();
@@ -111,7 +113,8 @@ angular.module('dashboardApp')
   /**
    * Log Out Controller
    */
-  .controller('LogOutCtrl', function ($scope, $location, user) {
+  .controller('LogOutCtrl', ['scope', 'location', 'user',
+    function ($scope, $location, user) {
       // User Data
       $scope.user = user;
 
@@ -125,7 +128,7 @@ angular.module('dashboardApp')
       $location.path('/login');
       $scope.hide();
     }
-  )
+  ])
 
 
 

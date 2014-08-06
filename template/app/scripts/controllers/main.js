@@ -76,20 +76,20 @@ angular.module('babelBlogsApp')
 
     // Function that Create a Session if username and password are valid.
     $scope.SignIn = function() {
-      alert('SignIn...');
+      // alert('SignIn...');
       if ( !user.current() ) {
         /**
          * Validate Inputs
          */
-         alert('Verifying inputs...');
+         // alert('Verifying inputs...');
         // Check if the username is provided
         if (!$scope.login.name) {
-          $scope.showAlert('Missing User Name', 'Please provide a valid user name.');
+          alert('Missing User Name', 'Please provide a valid user name.');
           $scope.hide();
           return;
         }
         else if (!$scope.login.password) {
-          $scope.showAlert('Missing Password', 'Please provide a password.');
+          alert('Missing Password', 'Please provide a password.');
           $scope.hide();
           return;
         }
@@ -97,9 +97,9 @@ angular.module('babelBlogsApp')
         /**
          * Try to log in
          */
-        alert('Trying to log in...');
+        // alert('Trying to log in...');
         user.logIn($scope.login.name, $scope.login.password).then(function(user) {
-          alert('Logged...');
+          // alert('Logged...');
           $scope.user.isLogin = true;
           // Clear Form data
           $scope.login.password = '';
@@ -110,7 +110,7 @@ angular.module('babelBlogsApp')
           $scope.$apply();
         },function(error) {
           $scope.user.isLogin = false;
-          alert('Error', error.message);
+          alert('Error: ' + error.message);
           // Clear password field when sign in fail
           $scope.login.password = '';
         });
@@ -184,25 +184,24 @@ angular.module('babelBlogsApp')
      * Function that Creates a new user and redirect to main view
      */
     $scope.SignUp = function() {
-      alert('::SignUp:');
       // Create a New User Object
       var user = new Parse.User();
 
       /**
        * Validate Inputs
        */
-       if (!$scope.newUser.name) {
+      if (!$scope.newUser.name) {
         alert('Missing user name', 'Please provide a valid user name.');
         return;
-       }
-       else if (!$scope.newUser.email) {
+      }
+      else if (!$scope.newUser.email) {
         alert('Missing E-mail', 'Please provide a valid e-mail.');
         return;
-       }
-       else if (!$scope.newUser.password) {
+      }
+      else if (!$scope.newUser.password) {
         alert('Missing password', 'Please provide a password.');
         return;
-       }
+      }
 
       // Populated user with provided form data
       user.set('username', $scope.newUser.name);
@@ -217,7 +216,7 @@ angular.module('babelBlogsApp')
         $location.path('/');
         $scope.$apply();
       }, function(error) {
-        $scope.showAlert('Error', error.message);
+        alert('Error:' + error.message);
       });
     };
   }])

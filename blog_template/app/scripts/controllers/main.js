@@ -5,7 +5,7 @@ angular.module('blogTemplateApp')
   /**
    * BabelBlogs Core Controller
    */
-  .controller('BBCoreCtrl', function ($sce, $rootScope, $scope, $route, $location, user) {
+  .controller('BBCoreCtrl', function ($sce, $rootScope, $scope, $route, $routeParams, $location, user) {
     $scope.bbcore = {};
     $scope.bbcore.user = user;
     $scope.bbcore.edit = true;
@@ -33,7 +33,7 @@ angular.module('blogTemplateApp')
     
     var getSite = function() {
       var query = new Parse.Query('Site');
-      query.equalTo('objectId','Y4KkHHrfrQ');
+      query.equalTo('objectId', siteConfig.id);
       query.find().then(function(site) {
         var Site = JSON.parse(site[0].get('schema'));
         console.log( 'Schema'+JSON.parse(site[0].get('schema') ) );
