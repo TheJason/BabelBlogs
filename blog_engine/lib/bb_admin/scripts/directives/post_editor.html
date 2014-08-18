@@ -1,0 +1,95 @@
+<div>
+  	<form id="page-editor" accept-charset="utf-8">
+  		<div class="form-group">
+  	    <input type="text" name="title" class="form-control" value="" required="required" pattern="" title="" placeholder="Post Title" ng-model="bbcore.currentPost.title">
+  	  </div>
+
+  	  <!-- CKEditor -->
+  		<form>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">    
+        </textarea>
+      </form>
+
+      <div class="form-group">
+      </div>
+
+  		<div class="panel-group" id="accordion">
+  		  <div class="panel panel-default">
+  		    <div class="panel-heading">
+  		      <h4 class="panel-title">
+  		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+  		          Publish
+  		        </a>
+  		      </h4>
+  		    </div>
+  		    <div id="collapseOne" class="panel-collapse collapse in">
+  		      <div class="panel-body">
+  		        <form accept-charset="utf-8">
+  		        	<div class="form-group">
+  		        		<label for="status">Status: </label> 'currentStatus' <a ng-href="#" title="">Edit</a>
+  		        		<br/>
+  		        		<select name="status">
+  		        			<option value="draft">Draft</option>
+  		        			<option value="review">Pending Review</option>
+  		        		</select>
+  		        		<span>
+  		        			<button type="button" class="btn btn-default btn-xs">Apply</button>
+  		        			<a ng-href="#" title="">Cancel</a>
+  		        		</span>
+  		        	</div>
+
+  		        	<div class="form-group">
+  		        		<label for="visibility">Visibility: </label> 'currentVisibility' <a ng-href="#" title="">Edit</a>
+  		        		<br/>
+  		        		<select name="status">
+  		        			<option value="public">Public</option>
+  		        			<option value="private">Private</option>
+  		        		</select>
+  		        		<span>
+  		        			<button type="button" class="btn btn-default btn-xs">Apply</button>
+  		        			<a ng-href="#" title="">Cancel</a>
+  		        		</span>
+  		        	</div>
+
+  		        	<div class="form-group">
+  		        	</div>
+  		        </form>
+  		      </div>
+  		    </div>
+  		  </div>
+  		  <div class="panel panel-default">
+  		    <div class="panel-heading">
+  		      <h4 class="panel-title">
+  		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+  		          SEO
+  		        </a>
+  		      </h4>
+  		    </div>
+  		    <div id="collapseTwo" class="panel-collapse collapse">
+  		      <div class="panel-body">
+  		        Add Content
+  		      </div>
+  		    </div>
+  		  </div>
+  		  <div class="panel panel-default">
+  		    <div class="panel-heading">
+  		      <h4 class="panel-title">
+  		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+  		          Menu Options
+  		        </a>
+  		      </h4>
+  		    </div>
+  		    <div id="collapseThree" class="panel-collapse collapse">
+  		      <div class="panel-body">
+  		        Add Content
+  		      </div>
+  		    </div>
+  		  </div>
+  		</div> <!-- Accordion -->
+  		<hr/>
+  		<div class="save-options pull-right">
+  			<button class="btn btn-danger" type="button" data-action="dismiss">Cancel</button>
+  			<button class="btn btn-primary" type="button" data-action="save-post">Save</button>
+  		</div>
+  	</form>
+</div>

@@ -1,0 +1,115 @@
+<div>
+  <div class="bb-toolbox" ng-show="bbcore.edit" ng-cloak>
+    <ul>
+      <li data-id="#page-list"><a ng-href="" title=""><span class="glyphicon glyphicon-list-alt"></span> Pages</a></li>
+      <li id="page-list" class="hide">
+        <ul ui-sortable="bbcore.sortablePageMenuOptions" ng-model="bbcore.site.pages">
+          <li ng-repeat="page in bbcore.site.pages track by page.url"><a ng-href="#{{ page.url }}" title="">{{ page.title }}</a><span data-page-id="{{ page.pageId }}" class="glyphicon glyphicon-edit"></span></li>
+          <hr/>
+          <li data-page-add><span class="glyphicon glyphicon-plus"></span> New Page</li>
+        </ul>
+      </li>
+      <li><span class="glyphicon glyphicon-edit"></span> Design</li>
+      <li data-id="#insert-list"><span class="glyphicon glyphicon-plus"></span> Insert</li>
+      <li id="insert-list" class="hide">
+        <ul>          
+          <li data-insert-text><span class="glyphicon glyphicon-font"></span> Text</li>
+          <li><span class="glyphicon glyphicon-picture"></span> Image</li>
+          <li><span class="glyphicon glyphicon-tasks"></span> Bottons</li>
+        </ul>
+      </li>
+      <li><span class="glyphicon glyphicon-cog"></span> Widgets</li>
+      <li><span class="glyphicon glyphicon-wrench"></span> Settings</li>
+    </ul>
+  </div>
+
+  <!-- Button trigger modal -->
+  <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pageSettingsModal">
+    Launch Modal
+  </button> -->
+
+  <!-- Page Settings Modal -->
+  <div class="modal fade" id="pageSettingsModal" tabindex="-1" role="dialog" aria-labelledby="pageSettingsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="pageSettingsModalLabel">Page Settings</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" method="get" accept-charset="utf-8">
+            <div class="form-group">
+              <label for="pagename">Page Name</label>
+              <input type="text" class="form-control" name="pagename" value="" ng-model="PageEditing.title" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="pageurl">Page URL</label>
+              <input type="text" class="form-control" name="pageurl" value="" ng-model="PageEditing.url" placeholder="">
+            </div>
+          </form>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="translate"> Enable Translation
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" namge="homepage"> Set as Home Page.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="hidepage"> Hide from Menu
+            </label>
+          </div>
+
+          <hr/>
+
+          <h5>SEO</h5>
+          <div class="form-group">
+            <label for="pageurl">Page Description</label>
+            <input type="text" class="form-control" name="SEOPageDescription" value="" ng-model="PageEditing.description" placeholder="">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" namge="homepage"> Hide from Search Engines.
+            </label>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-remove="page">Remove</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-apply="edition">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END Page Settings Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="AddPageModal" tabindex="-1" role="dialog" aria-labelledby="addPageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="pageSettingsModalLabel">New Page</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" method="get" accept-charset="utf-8">
+            <div class="form-group">
+              <label for="pagename">Page Name</label>
+              <input type="text" class="form-control" name="pagename" value="" ng-model="NewPage.title" placeholder="">
+            </div>            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-apply="edition">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Add Page Modal -->
+
+</div>

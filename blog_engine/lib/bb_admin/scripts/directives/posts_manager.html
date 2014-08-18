@@ -1,0 +1,61 @@
+<div class="row">    
+  <div class="col-md-12">
+    <h2>Posts</h2>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>            
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">               
+              <select name="bulk" id="bulk" class="form-control">
+                <option value="">-- Bulk Operations --</option>
+                <option value="delete">Delete</option>
+                <option value="unpublish">Unpublish</option>
+              </select>
+            </div>
+            <button class="bulk-operation" type="button" class="btn btn-primary">Apply</button>
+          </form>
+          <form class="navbar-form navbar-right">
+            <a class="btn btn-primary" ng-href="#posts/new" title="">Add Post</a>
+          </form>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Post List -->
+    <table class="pages table table-striped table-hover">
+      <thead>
+        <tr>
+          <th><input class="select-all" type="checkbox" value=""></th>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Created At</th>
+          <th>Updated At</th>
+          <th></th>
+        </tr>        
+      </thead>
+      <tbody class='post-list'>
+        <tr ng-repeat="post in bbcore.site.posts">
+          <td><input type="checkbox" value="" data-post-id="{{ post.postId }}"></td>
+          <td><a ng-href="/#/{{ post.url }}" title="">{{ post.title }}</a></td>
+          <td>Post</td>
+          <td></td>
+          <td>{{ post.updatedAt }}</td>
+          <td><a ng-href="#posts/edit/{{ post.postId }}" title="">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
