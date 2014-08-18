@@ -1,0 +1,9 @@
+'use strict';
+
+(function() {
+var config = {
+  id: [site_id],
+  author: [site_author],
+}
+window.siteConfig = config;
+})();

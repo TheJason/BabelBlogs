@@ -28,9 +28,6 @@ Parse.initialize('SJ00HRyBkPc30iFhTkn0Oopo3GymfYlnKpaecN3m', 'c3ytYcMIQhYv6joute
  * Marketing Site App
  */
 marketingApp.use('/', express.static('bb_marketing'));
-marketingApp.get('/testing', function(req, res) {
-  res.send('Testing vHost!');
-});
 
 
 
@@ -41,8 +38,6 @@ blogEngineApp.engine('html', require('ejs').renderFile);    // Template engine
 dashboardApp.use('/', express.static('bb_dashboard'));
 
 // middleware that gets a named param
-//d5OJocYaB4
-//Y4KkHHrfrQ
 blogEngineApp.use('/', function(req, res, next) {
     var site_name = req.vhost[0];
     console.log('::site_name: ' + site_name);
@@ -73,8 +68,58 @@ blogEngineApp.use('/', function(req, res, next) {
         res.json({error: site_name+' not found...'});
       }
     });
-    
 });
+
+blogEngineApp.use('/admin', function(req, res, next) {
+    var site_name = req.vhost[0];
+    console.log('::site_name: ' + site_name);
+    // create site path
+    var siteUrl = '';
+    var query = new Parse.Query('Site');
+    query.equalTo('url', site_name);
+    query.find().then(function(site) {
+      var Site = site[0];
+      console.log('Site.id: '+Site.id);
+      if (Site) {
+        siteUrl = Site.url;
+        var sitePath = path.join(__dirname, 'bb_admin/');
+        console.log('::sitePath: ' + sitePath);
+
+        // check it if exists on the file system
+        fs.exists(sitePath, function(exists) {
+          // Remove existing template
+          fs.removeSync('./bb_temp/' + Site.id);
+          // Copy template
+          fs.copyRecursive('./sites/'+Site.id, './bb_temp/' + Site.id, function (err) {
+            if (err) {
+              console.log(err);
+            }
+            else {
+              // console.log('Copied '+'./sites/'+Site.id +' to ' + 'sites/' + siteID);
+              // createSchema();
+              // createConfing();
+              // console.log('url', site[0].get('url'));
+              // console.log(('http://' + site[0].get('url') + '.bblogs.co:1337'));
+              // res.redirect('http://' + site[0].get('url') + '.bblogs.co:1337');
+            }
+          });
+          // if not move to next piece of middleware
+          if (!exists) {
+            return next();
+          }
+          // if it does run express.static to return
+          // a middlware function to handle that path
+          // then run that function and pass it the req,res,next params
+          return express.static(sitePath)(req, res, next);
+        });
+      }
+      else {
+        res.json({error: site_name+' not found...'});
+      }
+    });
+});
+
+
 
 // blogEngineApp.get('/', function(req, res) {
 //   var site_name = req.vhost[0];

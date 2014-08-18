@@ -72,7 +72,6 @@ angular.module('blogTemplateApp')
 				CKEDITOR.replace( 'editor1', {
 					allowedContent: true
 				});
-
 			};
 
       var removeEditionAttributes = function() {

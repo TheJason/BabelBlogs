@@ -1,5 +1,5 @@
 <!-- header -->
-<div ng-include="'views/include/header.html'">  
+<div ng-include="'views/include/header.html'">
 </div>
 
 <div class="content">
@@ -26,10 +26,10 @@
           <div class="panel-body">
             Last Update: {{website.updatedAt|date}} <br/>
             <hr/>
-            <a href="#" title="" class="btn btn-default">Manage</a>            
-            <a ng-href="http://{{website.url}}.{{site.server}}" title="" class="btn btn-primary">Preview</a>
+            <a ng-href="http://{{website.url}}.{{site.server}}/admin" title="" class="btn btn-default">Manage</a>            
+            <a ng-href="http://{{website.url}}.{{site.server}}" title="" target='_blank' class="btn btn-default">Preview</a>
             <a href="#" title="" class="btn btn-default">Settings</a>
-            <a href="#" title="" class="btn btn-primary">Upgrade</a>
+            <a href="#" title="" class="btn btn-primary">Upgrade</a> 
           </div>
         </div>
       </div>

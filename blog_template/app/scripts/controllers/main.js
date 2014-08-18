@@ -8,7 +8,7 @@ angular.module('blogTemplateApp')
   .controller('BBCoreCtrl', function ($sce, $rootScope, $scope, $route, $routeParams, $location, user) {
     $scope.bbcore = {};
     $scope.bbcore.user = user;
-    $scope.bbcore.edit = true;
+    $scope.bbcore.edit = false;
     $scope.bbcore.selectedElement = '';
     // $scope.bbcore.site = Site;
 
