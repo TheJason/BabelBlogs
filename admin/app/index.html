@@ -22,13 +22,16 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="toolbar">
+    <!-- <div id="toolbar">
       Babel Blogs
-    </div>
-    <div id="sidebar-left">
+    </div> -->
+    <!-- Header -->
+    <div ng-include="'views/include/header.html'"></div>
+
+    <div id="sidebar-left" ng-show="bbcore.user.isLogin" ng-cloak>
       <h2>Admin</h2>
       <ul class='nav'>
-        <li><a ng-href="/admin" title="">Dashboard</a></li>
+        <li><a ng-href="#/" title="">Dashboard</a></li>
         <li><a ng-href="#posts" title="">Posts</a></li>
         <li><a ng-href="#pages" title="">Pages</a></li>
         <li><a ng-href="#seo" title="">SEO</a></li>
@@ -90,5 +93,12 @@
         <script src="scripts/controllers/main.js"></script>        
         <script src="scripts/directives/directives.js"></script>
         <!-- endbuild -->
+
+    <!-- livereload script -->
+    <script type="text/javascript">
+      document.write('<script src="http://'
+          + (location.host || 'localhost').split(':')[0]
+          + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+    </script>
 </body>
 </html>

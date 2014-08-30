@@ -1,7 +1,7 @@
-<div class="header">
+<div id="toolbar" ng-show="bbcore.user.isLogin" ng-cloak>
   <div class="dropdown pull-right">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-      Welcome, {{ user.name }}
+      Welcome, {{ bbcore.user.name }} <span class="glyphicon glyphicon-user" ></span>
       <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -11,7 +11,7 @@
     </ul>
   </div>
 
-  <h3 class="text-muted">Babel Blogs</h3>
+  <div><span><h4 class="text-muted">Babel Blogs</h4></span> <span> Visite Site {{bbcore.site.siteTitle}}</span></div>
   <div class="container">
     <!-- nav -->
     <div bb-dashboard-nav></div>

@@ -5,7 +5,7 @@
   	  </div>
 
   	  <!-- CKEditor -->
-  		<form>
+  		<form ng-cloak>
         <textarea name="editor1" id="editor1" rows="10" cols="80">    
         </textarea>
       </form>
@@ -22,7 +22,7 @@
   		        </a>
   		      </h4>
   		    </div>
-  		    <div id="collapseOne" class="panel-collapse collapse in">
+  		    <div id="collapseOne" class="panel-collapse collapse">
   		      <div class="panel-body">
   		        <form accept-charset="utf-8">
   		        	<div class="form-group">
@@ -81,7 +81,12 @@
   		    </div>
   		    <div id="collapseThree" class="panel-collapse collapse">
   		      <div class="panel-body">
-  		        Add Content
+  		        <form>
+                <div class="form-group">
+                  <label for="url">Page URL</label>
+                  <input type="text" name="url" class="form-control" value="" required="required" pattern="" title="Page URL" placeholder="Page URL" ng-model="bbcore.currentPage.url">
+                </div>
+              </form>
   		      </div>
   		    </div>
   		  </div>
@@ -89,7 +94,7 @@
   		<hr/>
   		<div class="save-options pull-right">
   			<button class="btn btn-danger" type="button" data-action="dismiss">Cancel</button>
-  			<button class="btn btn-primary" type="button" data-action="save">Save</button>
+  			<button class="btn btn-primary" type="button" data-action="save-page">Save</button>
   		</div>
   	</form>
 </div>

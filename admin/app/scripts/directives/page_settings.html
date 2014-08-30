@@ -1,0 +1,32 @@
+<div>
+  	<form id="page-editor" accept-charset="utf-8">
+  		<div class="form-group">
+        <label for="page_title">Site Title</label>
+  	    <input type="text" name="page_title" class="form-control" value="" required="required" pattern="" title="" placeholder="Page Title" ng-model="bbcore.site.siteName">
+  	  </div>
+
+      <div class="form-group">
+        <label for="page_description">Description</label>
+        <input type="text" name="page_description" class="form-control" value="" required="required" pattern="" title="" placeholder="Page Description" ng-model="bbcore.site.description">
+      </div>
+
+      <div class="form-group">
+        <label for="page_title">Keywords</label>
+        <input type="text" name="page_title" class="form-control" value="" required="required" pattern="" title="" placeholder="Add Keywords" ng-model="bbcore.site.keywords">
+      </div>
+
+      <div class="form-group">
+        <label for="">Site URL</label>
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="bbcore.site.url">
+          <span class="input-group-addon">.bblogs.co</span>
+        </div>
+      </div>
+  		
+  		<hr/>
+  		<div class="save-options pull-right">
+  			<button class="btn btn-danger" type="button" data-action="dismiss">Cancel</button>
+  			<button class="btn btn-primary" type="button" data-action="save-settings">Save</button>
+  		</div>
+  	</form>
+</div>
